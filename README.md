@@ -26,9 +26,11 @@ Then type into the command window `live update` to refresh the Live Data Sources
 
 In your blank project folder, to add the Fabric template, from the DnaWeb command window type:
 
-`new template fabric` 
+`new template fabric.blank` 
 
 Then press enter to use the current folder. Your project folder should now contain the Fabric template and folders,  the dna.config file and all that is needed to start creating a website with the Fabric template already built in and ready to use.
+
+Close and re-open DnaWeb in that folder now to have the Live Server spin up so you can see the new website.
 
 ## Testing Grid System
 
