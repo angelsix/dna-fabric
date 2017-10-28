@@ -6,6 +6,13 @@
 *.user
 *.sln.docstates
 
+# Exclude WebRoot folder except Fonts
+!Template/WebRoot/
+Template/WebRoot/*
+!Template/WebRoot/Assets/
+Template/WebRoot/Assets/*
+!Template/WebRoot/Assets/Fonts
+
 project.lock.json
 
 node_modules/

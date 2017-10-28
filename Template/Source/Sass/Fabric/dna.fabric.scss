@@ -1,0 +1,35 @@
+@import "dna.fabric.normalize";
+@import "dna.fabric.settings";
+@import "dna.fabric.breakpoints";
+@import "dna.fabric.mixins";
+@import "dna.fabric.palette";
+@import "dna.fabric.theme";
+@import "dna.fabric.layout";
+@import "dna.fabric.responsive";
+@import "dna.fabric.grid";
+
+// Use Quicksand font
+@import "dna.fabric.fonts.quicksand";
+
+body
+{
+    // Set line heights
+    line-height: $base-line-height;
+
+    // Set default font weights
+    font-weight: $font-weight-normal;
+}
+
+h1,h2,h3,h4,h5,h6
+{
+    // Set heading font weights
+    font-weight: $font-weight-heading;
+}
+
+// Set heading sizes
+h1 { font-size: $header-size-1; }
+h2 { font-size: $header-size-2; }
+h3 { font-size: $header-size-3; }
+h4 { font-size: $header-size-4; }
+h5 { font-size: $header-size-5; }
+h6 { font-size: $header-size-6; }

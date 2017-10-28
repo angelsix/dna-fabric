@@ -1,0 +1,15 @@
+//
+//   Loop Each Breakpoint
+//
+@each $breakpoint in $breakpoints 
+{
+    // Get breakpoint name
+    $name: nth($breakpoint, 1);
+    
+    // Add media query wrapper around contents
+    @include media($name)
+    {
+        // Add responsive .hidden classes
+       @include hidden('#{$name}-');
+    }
+}
