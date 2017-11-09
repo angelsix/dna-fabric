@@ -1,15 +1,30 @@
-@import "dna.fabric.normalize";
-@import "dna.fabric.settings";
-@import "dna.fabric.breakpoints";
-@import "dna.fabric.mixins";
-@import "dna.fabric.palette";
-@import "dna.fabric.theme";
-@import "dna.fabric.layout";
-@import "dna.fabric.responsive";
-@import "dna.fabric.grid";
+// Base
+@import "Base/dna.fabric.normalize";
+@import "Base/dna.fabric.settings";
+@import "Base/dna.fabric.breakpoints";
+@import "Base/dna.fabric.mixins";
 
-// Use Quicksand font
-@import "dna.fabric.fonts.quicksand";
+// Theme
+@import "Theme/dna.fabric.palette";
+@import "Theme/dna.fabric.theme";
+@import "Theme/dna.fabric.fonts.quicksand";
+
+// Layout / Grid
+@import "Layout/dna.fabric.layout";
+@import "Layout/dna.fabric.responsive";
+@import "Layout/dna.fabric.grid";
+@import "Layout/dna.fabric.lists";
+@import "Layout/dna.fabric.menus";
+
+// Icon Fonts
+@import "Fonts/_ionicons.scss";
+
+// Animations
+@import "Animations/dna.fabric.animations";
+
+// Styles / Controls / Elements
+@import "TopMenus/dna.fabric.topmenus";
+
 
 body
 {

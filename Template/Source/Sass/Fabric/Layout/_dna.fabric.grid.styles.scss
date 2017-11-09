@@ -19,12 +19,7 @@
     // by changing size to 0
     font-size: 0px;        
         
-    &:after {
-        /* Or @extend clearfix */
-        content: "";
-        display: table;
-        clear: both;
-    }
+    @extend .clearfix;
 }
 
 //

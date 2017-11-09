@@ -1,0 +1,24 @@
+<!-- Top Navigation Menu -->
+<nav class="top-menu-standard" data-scrolldown-class="reduced">
+
+    <!-- Top Menu Contents -->
+    <div>
+        
+        <!-- Logo -->
+        <img src="/Assets/Images/logo-flat.png" />
+
+        <!-- Menu Icon -->
+        <div class="menu-icon"><a href="#topmenu" data-toggle-class="expanded"><i class="ion-navicon-round"></i></a></div>
+        
+        <!-- Menu items -->
+        <ul data-topmenu-class="expanded">
+            <li><a href="#">blog</a></li>
+            <li><a href="#">youtube</a></li>
+            <li><a href="#">solidworks</a></li>
+            <li><a href="#">fasetto</a></li>
+            <li><a href="#">contact</a></li>
+        </ul>
+
+    </div>
+
+</nav>
