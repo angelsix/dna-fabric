@@ -36,16 +36,52 @@
 //
 @mixin hidden($prefix: "")
 {
-    // Hides elements ay specific breakpoints
+    // Hides elements at specific breakpoints
     //
     //   Examples:
     //     .hidden (all the time)
-    //     .below-lap hidden (hidden when below-lap breakpoint)
+    //     .below-lap-hidden (hidden when below-lap breakpoint)
     //
     .#{$prefix}hidden
     {
         // Hide
         display: none !important;   
+    }
+}
+
+//
+//   Show
+//
+@mixin show-block($prefix: "")
+{
+    // Shows elements at specific breakpoints
+    //
+    //   Examples:
+    //     .show (all the time)
+    //     .below-lap-show (shown when below-lap breakpoint)
+    //
+    .#{$prefix}show-block
+    {
+        // Hide
+        display: block !important;   
+    }
+}
+
+//
+//   Show
+//
+@mixin show-inline($prefix: "")
+{
+    // Shows elements at specific breakpoints, as display inline-block
+    //
+    //   Examples:
+    //     .show (all the time)
+    //     .below-lap-show-inline (shown when below-lap breakpoint)
+    //
+    .#{$prefix}show-inline
+    {
+        // Hide
+        display: inline-block !important;   
     }
 }
 

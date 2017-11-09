@@ -10,6 +10,10 @@
     @include media($name)
     {
         // Add responsive .hidden classes
-       @include hidden('#{$name}-');
+        @include hidden('#{$name}-');
+
+        // Add responsive .show classes
+        @include show-block('#{$name}-');
+        @include show-inline('#{$name}-');
     }
 }

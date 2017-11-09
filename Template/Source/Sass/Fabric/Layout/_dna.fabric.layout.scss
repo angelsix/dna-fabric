@@ -1,4 +1,13 @@
 //
+//   Box-sizing everything
+//
+*
+{
+    // Make every sizing include padding and border
+    box-sizing: border-box;
+}
+
+//
 //   Container
 //
 .container
@@ -17,6 +26,14 @@
     //  <body> 
     //
     padding: $spacing-larger $spacing-normal;
+}
+
+//
+//   Images by default 100% width
+//
+img
+{
+    width: 100%;
 }
 
 //
@@ -40,5 +57,22 @@
 //   Align Text Horizontally Right
 //
 .text-right { text-align: right; }
+
+.clearfix
+{
+    &:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+
+//
+//   Hide
+//
+.hidden
+{
+    display: none;
+}
 
 // TODO: Add vertical alignments for specific types

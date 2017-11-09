@@ -18,13 +18,18 @@
                 <div class="col one-quarter below-desk-one-half below-lap-full"><span class="demo-col">4</span></div>
 
                 <div class="col desk-hidden tab-hidden mob-hidden">
-                        <div class="grid">
-                            <div class="col one-half"><span class="demo-col">Laptop only</span></div>
+                    <div class="grid">
                         <div class="col one-half"><span class="demo-col">Laptop only</span></div>
-                        </div>
+                        <div class="col one-half"><span class="demo-col">Laptop only</span></div>
                     </div>
                 </div>
 
+                <div class="col desk-hidden lap-hidden mob-hidden">
+                    <div class="grid">
+                        <div class="col one-half"><span class="demo-col">Tablet only</span></div>
+                        <div class="col one-half"><span class="demo-col">Tablet only</span></div>
+                    </div>
+                </div>
             </div>
 
             <div class="grid-wrapper">
