@@ -96,6 +96,7 @@ $top-menu-standard-reduced-logo-height: $spacing-larger !default;
             // Show when below laptop
             @extend .#{$breakpoint-below-laptop}-show-block;
 
+            // Float menu icon to right
             float: right;
 
             // Nice big font
