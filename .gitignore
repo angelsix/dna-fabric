@@ -14,6 +14,9 @@ Template/WebRoot/Assets/*
 !Template/WebRoot/Assets/Fonts
 # NOTE: Temporary include of .js files until we migrate to TypeScript
 !Template/WebRoot/Assets/Js
+# NOTE: Include images for now
+!Template/WebRoot/Assets/Images/
+
 
 project.lock.json
 
