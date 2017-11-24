@@ -1,5 +1,6 @@
 // Callbacks to fire when the page scrolls
 var scrollCallbacks = [];
+var scrollInstantCallbacks = [];
 
 // Tracking Id for the scroll timer
 var scrollTimerCallbackId = null;
@@ -17,6 +18,13 @@ function OnScroll(callback)
     scrollCallbacks.push(callback);
 }
 
+// Adds a function to be called whenever the page scrolls
+function OnScrollInstant(callback)
+{
+    // Add callback to list
+    scrollInstantCallbacks.push(callback);
+}
+
 // Processes what should happen when the page scrolls
 function ProcessOnScroll() 
 {
@@ -28,15 +36,29 @@ function ProcessOnScroll()
     });
 }
 
+// Processes what should happen when the page scrolls
+function ProcessOnScrollInstant() 
+{
+    // Loop each callback
+    ForEach(scrollInstantCallbacks, function(item)
+    {
+        // Call the callback
+        item();
+    });
+}
+
 // Gets the scroll position top of the window
 function ScrollPositionY()
 {
-    return window.ScrollY || window.scrollTop || document.getElementsByTagName("html")[0].scrollTop;
+    return window.ScrollY || window.scrollY || window.scrollTop || document.getElementsByTagName("html")[0].scrollTop;
 }
 
 // Hook into page scrolling
 window.addEventListener("scroll", function()
 {
+    // Process
+    requestAnimationFrame(ProcessOnScrollInstant);
+                
     // If the last callback has finished 
     // or it has never been fired
     if (!scrollTimerCallbackId)
@@ -48,7 +70,7 @@ window.addEventListener("scroll", function()
             lastScrollTime = new Date().getTime();
      
             // Process
-            ProcessOnScroll();
+            requestAnimationFrame(ProcessOnScroll);
         }
 
         // Either way, start a timeout to fire after the interval
@@ -61,7 +83,7 @@ window.addEventListener("scroll", function()
             lastScrollTime = new Date().getTime();
             
             // Process
-            ProcessOnScroll();
+            requestAnimationFrame(ProcessOnScroll);
 
         }, scrollUpdateInterval);
     }

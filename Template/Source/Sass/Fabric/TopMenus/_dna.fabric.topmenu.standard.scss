@@ -22,10 +22,10 @@ $top-menu-standard-reduced-logo-height: $spacing-larger !default;
     @extend .top-menu;
 
     // Smooth animations
-    transition: padding $transition-normal, color $transition-normal;
-        
-    // Main background color
-    background: $color1;
+    transition: padding $transition-normal, color $transition-normal, background-color $transition-normal;
+
+    // Start off transparent background
+    background: transparent;
 
     // Main bright foreground color
     color: $color6;
@@ -177,6 +177,9 @@ $top-menu-standard-reduced-logo-height: $spacing-larger !default;
     // Reduce size of menu
     &.reduced
     {
+        // Main background color
+        background: $color1;
+
         // Reduce padding
         padding: $top-menu-standard-reduced-padding 0px;
 
