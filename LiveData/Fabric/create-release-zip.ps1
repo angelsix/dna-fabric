@@ -21,6 +21,7 @@ Copy-Item ../../Template/WebRoot/Assets/Fonts Temp/Template/WebRoot/Assets/Fonts
 
 # Remove unnecessary files
 Remove-Item Temp/Template/Source/Html/modern1.dhtml
+Remove-Item Temp/Template/Source/Sass/modern1.scss
 
 # Create zip
 Compress-Archive Temp/Template/* "Templates/blank.zip"

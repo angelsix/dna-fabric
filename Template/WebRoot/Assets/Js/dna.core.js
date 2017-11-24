@@ -36,3 +36,18 @@ function OnLoad(callback)
     // Add this callback to the list
     onLoadCallbacks.push(callback);
 }
+
+// Generate a random number between the two values
+function RandomNumber(from, to)
+{
+    return (Math.random() * (to - from)) + from;
+}
+
+// Universal request animation 
+window.requestAnimationFrame = 
+    window.requestAnimationFrame || 
+    window.mozRequestAnimationFrame ||
+    window.webkitRequestAnimationFrame ||
+    window.msRequestAnimationFrame ||
+    function(f) { setTimeout(f, 1000/60) };
+    

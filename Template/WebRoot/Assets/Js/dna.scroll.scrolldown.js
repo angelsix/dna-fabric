@@ -1,6 +1,6 @@
 
 // The position at which to class as "not at the top"
-var scrollDownDetectStart = 60;
+var scrollDownDetectStart = 200;
 
 // Wait for page to load...
 OnLoad(function()
