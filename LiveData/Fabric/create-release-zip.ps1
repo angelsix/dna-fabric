@@ -17,11 +17,12 @@ Remove-Item Temp -Recurse -ErrorAction Ignore
 
 # Copy source
 Copy-Item ../../Template/Source Temp/Template/Source -Recurse
-Copy-Item ../../Template/WebRoot/Assets/Fonts Temp/Template/WebRoot/Assets/Fonts -Recurse
 
 # Remove unnecessary files
 Remove-Item Temp/Template/Source/Html/modern1.dhtml
 Remove-Item Temp/Template/Source/Sass/modern1.scss
+Remove-Item Temp/Template/Source/Assets/Images -Recurse -ErrorAction Ignore
+Remove-Item Temp/Template/Source/Assets/Js -Recurse -ErrorAction Ignore
 
 # Create zip
 Compress-Archive Temp/Template/* "Templates/blank.zip"
@@ -35,9 +36,6 @@ Remove-Item Temp -Recurse -ErrorAction Ignore
 
 # Copy source
 Copy-Item ../../Template/Source Temp/Template/Source -Recurse
-Copy-Item ../../Template/WebRoot/Assets/Fonts Temp/Template/WebRoot/Assets/Fonts -Recurse
-Copy-Item ../../Template/WebRoot/Assets/Images Temp/Template/WebRoot/Assets/Images -Recurse
-Copy-Item ../../Template/WebRoot/Assets/Js Temp/Template/WebRoot/Assets/Js -Recurse
 
 # Remove unnecessary files
 Remove-Item Temp/Template/Source/Html/index.dhtml
