@@ -1,0 +1,13 @@
+<div class="dialog-container full-height full-width scroll-content">
+    <div class="dialog">
+        <div class="header">Header</div>
+        <div class="content">
+            <div>
+                <p>Content</p>
+            </div>
+        </div>
+        <div class="footer">
+            <div>footer</div>
+        </div>
+    </div>
+</div>
