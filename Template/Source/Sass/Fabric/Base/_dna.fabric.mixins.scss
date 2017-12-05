@@ -85,6 +85,30 @@
     }
 }
 
+// When scrolling on Y the bottom padding gets lost
+// so fix it with a pseudo element at the bottom 
+@mixin scrolly($padding, $clear-padding: false)
+{
+    // Overflow Y
+    overflow-y: auto;
+
+    // Remove any bottom padding
+    // as it will get added via the ::after
+    // for items that are not full height of screen
+    @if $clear-padding == true
+    {
+        padding-bottom: 0;
+    }
+
+    &::after
+    {
+        content: "";
+        display: block;
+        height: $padding;
+        width: 100%;
+    }
+}
+
 //
 //   Media
 //
