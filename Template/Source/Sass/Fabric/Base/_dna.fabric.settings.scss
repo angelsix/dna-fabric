@@ -47,3 +47,6 @@ $transition-function: ease;
 
 // To be used like: transition: padding $transition-normal;
 $transition-normal: $transition-time-normal $transition-function;
+
+// Sit dialogs above general content
+$z-dialogs: 10;
