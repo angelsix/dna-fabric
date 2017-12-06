@@ -41,7 +41,7 @@
         > .dialog 
         {
             display: inline-flex !important;
-            flex-basis: 100%; 
+            flex-grow: 1; 
         }
 
         // NOTE: If you change this make sure to change
@@ -112,7 +112,7 @@
         // fill the height regardless of content
         > .dialog
         {
-            flex-basis: 100%;
+            flex-grow: 1;
         }
     }
 
@@ -195,7 +195,7 @@
         {
             // Content should always take up all space of parent
             // that is left after header/foot
-            flex-basis: 100%;                
+            flex-grow: 1;                
         }
     }
 }
