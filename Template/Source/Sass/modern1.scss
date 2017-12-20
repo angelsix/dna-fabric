@@ -1,9 +1,11 @@
-@import "fabric/dna.fabric";
+@import "Fabric/Settings/dna.fabric.settings";
+
+@import "Fabric/dna.fabric";
 
 // Mascot background
 .mascot-background
 {
-    @extend .slide-in-right-shake;
+    @extend .slide-in-left-shake;
 
     // Decent size
     height: 600px;
@@ -71,3 +73,10 @@
         height: 35vw;
     }
 }
+
+.top-menu-standard .menu-logo img
+{
+    // Make logo shake on hover
+    @extend .shake;
+}
+    

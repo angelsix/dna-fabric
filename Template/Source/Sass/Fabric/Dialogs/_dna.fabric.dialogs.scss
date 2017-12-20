@@ -38,10 +38,11 @@
 
         // Full width and height
         align-items: stretch !important;
+
         > .dialog 
         {
             display: inline-flex !important;
-            flex-basis: 100%; 
+            flex-grow: 1;
         }
 
         // NOTE: If you change this make sure to change
@@ -79,12 +80,14 @@
         // Center children (the dialog itself)
         // Direction column stretches height
         flex-direction: column;
+
         // Center horizontally (as direction is column so align is horizontal)
         align-items: center;
 
         > .dialog > .content
         {
             overflow-y: auto;
+
             // Inside contents will scroll if larger
             @include scrolly($spacing-normal, true);
         }
@@ -112,7 +115,7 @@
         // fill the height regardless of content
         > .dialog
         {
-            flex-basis: 100%;
+            flex-grow: 1;
         }
     }
 
@@ -195,12 +198,7 @@
         {
             // Content should always take up all space of parent
             // that is left after header/foot
-            flex-basis: 100%;                
+            flex-grow: 1;
         }
     }
-}
-
-body
-{
-    overflow: hidden;
 }

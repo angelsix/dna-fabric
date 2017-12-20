@@ -13,7 +13,8 @@
     padding: 0;
 
     // Shift left of grid over by column padding
-    margin-left:-$fabric-grid-col-padding;           /* Remove first columns gutter */
+    // Remove first columns gutter
+    margin-left:-$fabric-grid-col-padding;
 
     // Fix whitespace issue between columns
     // by changing size to 0
@@ -30,13 +31,18 @@
     // Reset font size
     font-size: $base-font-size;
 
-    width:100%;                     /* Default full width if not specified */
+    // Default full width if not specified
+    width: 100%;
     
-    @include box-sizing(border-box); /* Required for fluid widths to work with padding (gutter) */
+    // Required for fluid widths to work with padding (gutter)
+    @include box-sizing(border-box);
         
     float: left;
+
     padding-left: $fabric-grid-col-padding;
-    &:last-of-type {
+
+    &:last-of-type 
+    {
         padding-right: 0;
     }
 }

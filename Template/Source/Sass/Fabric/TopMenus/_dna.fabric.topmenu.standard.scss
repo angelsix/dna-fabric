@@ -1,23 +1,8 @@
 //
-//   Variables
-//
-
-// Top menu height
-$top-menu-standard-padding: $spacing-normal !default;
-$top-menu-standard-reduced-padding: $spacing-small !default;
-
-// Top menu items padding
-$top-menu-standard-reduced-item-padding: $spacing-small !default;
-
-// Logo height
-$top-menu-standard-logo-height: $spacing-largest !default;
-$top-menu-standard-reduced-logo-height: $spacing-larger !default;
-
-//
 //   Styling
 //
 .top-menu-standard
-{
+{    
     // Extend top menu
     @extend .top-menu;
 
@@ -26,7 +11,7 @@ $top-menu-standard-reduced-logo-height: $spacing-larger !default;
 
     // Start off transparent background
     background: transparent;
-
+    
     // Main bright foreground color
     color: $color6;
 
@@ -38,42 +23,73 @@ $top-menu-standard-reduced-logo-height: $spacing-larger !default;
     width: 100%;
 
     // Add top/bottom padding
-    padding: $top-menu-standard-padding 0px; 
-    
+    padding: $top-menu-standard-padding;
+        
     // Main content area (image and menu items
     > div
-    {
-        // Keep menu within grid width
-        @extend .grid-wrapper;   
+    {        
+        // Use flexbox to vertically center items
+        display: flex;
 
-        > img
+        // Align center vertical
+        flex-direction: row;
+        align-items: center;
+    
+        // Allow overflowing to new rows
+        // so our mobile menu can go to new lines
+        flex-wrap: wrap;
+
+        // Keep menu within grid width
+        max-width: $fabric-grid-max-width; 
+        margin: 0 auto;
+
+        // Logo
+        > .menu-logo
         {
             // Smooth transitions
-            transition: height  $transition-normal;
+            transition: padding $transition-normal;
 
-            // Make logo shake on hover
-            @extend .shake;
+            // Take up remaining space
+            flex-grow: 1;
 
-            // Make image match height of container
-            height: $top-menu-standard-logo-height;
-            width: auto;
+            // Vertical align inner content
+            display: flex;
+            align-items: center;
+
+            // Add item padding
+            padding: $top-menu-standard-item-padding;
+                            
+            img
+            {
+                // Smooth transitions
+                transition: height $transition-normal;
+                        
+                // Set image height
+                height: $top-menu-standard-logo-height;
+                width: auto;
+
+                // Make image inline (as it can be inside an anchor) and vertical aligned
+                // to remove the baseline offset and correctly align vertically
+                display: inline-block;
+                vertical-align: middle;
+            }
         }
 
         // Menu Icon when < laptop
         > .menu-icon
-        {
-            // Smooth animations
-            transition: padding $transition-normal;
-    
+        {   
             // Hide by default
             @extend .hidden;
 
             // Alternative link color
             > a 
-            {
+            {           
                 // Smooth transitions
-                transition: transform $transition-normal;
+                transition: padding $transition-normal, transform $transition-normal;
 
+                // Add item padding just left/right for icon
+                padding: 0 $top-menu-standard-item-padding;
+            
                 // Bright general color
                 color: $color6;
 
@@ -88,6 +104,8 @@ $top-menu-standard-reduced-logo-height: $spacing-larger !default;
                     color: $color2; 
 
                     // Grow a bit
+                    // NOTE: Won't work on opera but its only a nice to have
+                    //       effect so doesn't matter
                     transform-origin: 50% 50%;
                     transform: scale(1.3, 1.3);
                 }
@@ -96,53 +114,42 @@ $top-menu-standard-reduced-logo-height: $spacing-larger !default;
             // Show when below laptop
             @extend .#{$breakpoint-below-laptop}-show-block;
 
-            // Float menu icon to right
-            float: right;
-
             // Nice big font
-            font-size: $font-larger;                        
-
-            // Padding to match main menu items
-            padding: $spacing-small;
-
-            // Verticle middle to fix baseline position
-            vertical-align: middle;
+            font-size: $font-larger;      
         }
         
         // Menu items
         > ul
         {
-            // Transition slide-in smoothly
-            transition: transform $transition-normal, opacity $transition-normal;      
-            
+           // Transition slide-in smoothly
+           transition: left $transition-normal, opacity $transition-normal;      
+           
             // Make horizontal menu
             @extend .horizontal-menu;
-
-            // Right align
-            float: right;
 
             // When menu is below laptop
             @include media($breakpoint-below-laptop)
             {
-                // Remove float
-                float: none;
-
                 // Go full width
-                position: absolute;
+                position: fixed;
+                top: 0;
+                bottom: 0;
                 left: 0;
-                right: 0;
 
-                // Make height fill page
-                // (height is relative to top navigation bar so is not that large
-                //  hance the reason for large value)
-                min-height: 2000%;
-
-                // Add background color now we are absolute 
-                // (so we can slide in/out without effecting parents height)
+                // Push menu items below actual menu
+                padding-top: $top-menu-pushdown;
+                
+                // Show behind logo and hamburger
+                z-index: -1;
+                
+                // Color background
                 background: $color1;
 
+                // Push
+                min-width: 100%;
+
                 // Hide off to the left by default
-                transform: translate(-100%, 0);
+                left: -100%;
             }
 
             // For each menu item
@@ -153,6 +160,19 @@ $top-menu-standard-reduced-logo-height: $spacing-larger !default;
 
                 // Float left
                 float: left;
+
+                // Set font size
+                > a
+                {
+                    // Smooth transition
+                    transition: padding $transition-normal, font-size $transition-normal;
+
+                    // Item padding
+                    padding: $top-menu-standard-item-padding;
+                
+                    // Set font size
+                    font-size: $top-menu-standard-font-size; 
+                }
 
                 // Hide below laptop
                 @include media ($breakpoint-below-laptop)
@@ -168,7 +188,7 @@ $top-menu-standard-reduced-logo-height: $spacing-larger !default;
                 @include media ($breakpoint-below-laptop)
                 {
                     // Slide in when expanded
-                    transform: translate(0%, 0);
+                    left: 0;
                 }
             }
         }
@@ -181,24 +201,54 @@ $top-menu-standard-reduced-logo-height: $spacing-larger !default;
         background: $color1;
 
         // Reduce padding
-        padding: $top-menu-standard-reduced-padding 0px;
-
+        padding: $top-menu-standard-reduced-padding;
+        
         > div
         {
-            > img
+            // The logo
+            > .menu-logo 
             {
-                // Make image smaller
-                height: $top-menu-standard-reduced-logo-height;                            
+                // Add item padding just left/right for icon
+                padding: 0 $top-menu-standard-reduced-item-padding;
+                                
+                // Image
+                img
+                {
+                    // Make image smaller
+                    height: $top-menu-standard-reduced-logo-height;                            
+                }
             }
 
-            > .menu-icon
+            > .menu-icon > a
             {
-                padding: $top-menu-standard-reduced-item-padding;                
+                // Reduced item padding
+                padding: $top-menu-standard-reduced-item-padding;
             }
 
             > ul > li > a
             {
+                // Reduced font size
+                font-size: $top-menu-standard-reduced-font-size;
+
+                // Reduced item padding
                 padding: $top-menu-standard-reduced-item-padding;
+            }
+        }
+    }
+
+    @include media($breakpoint-below-laptop)
+    {
+        // If below laptop, reduced menu items stay full padding 
+        // so they dont change size when scrolling
+        &.reduced
+        {
+            > div > ul > li > a
+            {
+                // Normal font size
+                font-size: $top-menu-standard-font-size;
+
+                // Normal item padding
+                padding: $top-menu-standard-item-padding;
             }
         }
     }
