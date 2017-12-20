@@ -24,7 +24,9 @@
         <div>
 
             <!-- Logo -->
-            <img src="/Assets/Images/logo-flat.png" />
+            <div class="menu-logo">
+                <a href="/"><img src="/Assets/Images/logo-flat.png" /></a>
+            </div>
 
             <!-- Menu Icon -->
             <div class="menu-icon">

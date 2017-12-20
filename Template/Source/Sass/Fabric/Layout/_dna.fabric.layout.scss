@@ -25,7 +25,15 @@
     //    </div>
     //  <body> 
     //
+
+    // Large padding on large screens
     padding: $spacing-larger $spacing-normal;
+
+    // Smaller when screen gets smaller
+    @include media($breakpoint-mobile)
+    {
+        padding:  $spacing-large $spacing-small;
+    }
 }
 
 //
@@ -73,6 +81,14 @@ img
 .hidden
 {
     display: none;
+}
+
+//
+//   Faded
+//
+.faded
+{
+    opacity: 0;
 }
 
 // TODO: Add vertical alignments for specific types

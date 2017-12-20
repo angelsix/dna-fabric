@@ -7,16 +7,7 @@
 *.sln.docstates
 
 # Exclude WebRoot folder except Fonts
-!Template/WebRoot/
-Template/WebRoot/*
-!Template/WebRoot/Assets/
-Template/WebRoot/Assets/*
-!Template/WebRoot/Assets/Fonts
-# NOTE: Temporary include of .js files until we migrate to TypeScript
-!Template/WebRoot/Assets/Js
-# NOTE: Include images for now
-!Template/WebRoot/Assets/Images/
-
+Template/WebRoot/
 
 project.lock.json
 

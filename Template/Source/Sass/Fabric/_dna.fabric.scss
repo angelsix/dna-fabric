@@ -1,6 +1,17 @@
+// NOTE: When including this file first include the 
+//       dna.fabric.settings file, and in between those
+//       two files specify any custom settings you want
+//       to override with your own, for example:
+//
+//       @import 'Settings/dna.fabric.settings'
+//       @import 'your.settings'
+//
+//       @import 'dna.fabric'
+//       @import 'your.styles'
+//
+
 // Base
 @import "Base/dna.fabric.normalize";
-@import "Base/dna.fabric.settings";
 @import "Base/dna.fabric.breakpoints";
 @import "Base/dna.fabric.mixins";
 

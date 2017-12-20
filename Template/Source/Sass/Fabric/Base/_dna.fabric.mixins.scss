@@ -50,6 +50,24 @@
 }
 
 //
+//   Faded
+//
+@mixin faded($prefix: "")
+{
+    // Fades elements at specific breakpoints
+    //
+    //   Examples:
+    //     .faded (all the time)
+    //     .below-lap-faded (faded when below-lap breakpoint)
+    //
+    .#{$prefix}faded
+    {
+        // Fade
+        opacity: 0;   
+    }
+}
+
+//
 //   Show
 //
 @mixin show-block($prefix: "")
