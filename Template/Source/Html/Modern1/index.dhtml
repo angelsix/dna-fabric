@@ -1,0 +1,56 @@
+<!--@ output modern1.html @-->
+<!--@ include header @-->
+<!--@ include topmenu @-->
+
+<main class="home">
+
+    <!-- Mascot Banner -->
+    <header class="mascot-header single-vcenter">
+
+        <div class="grid-wrapper">
+            <div class="grid vertical-center">
+                <div class="col one-half below-lap-one-whole">
+                    <div class="mascot-container">
+                        <div class="mascot-particles">
+                            <div data-particle-bubbles="0.2"></div>
+                        </div>
+                        <div class="mascot-background"></div>
+                    </div>
+                </div>
+                <div class="col one-half below-lap-one-whole">
+                    <header class="mascot-code">
+                        <div class="faded" data-delay-add="slide-in-up-group" data-delay="1">
+                            <p><span class="c1">while (</span><span class="c2">brain</span> <span class="c3">!=</span> <span class="c4">false</span><span class="c1">)</span></p>
+                            <p class="c3">{</p>
+                            <p>&nbsp;&nbsp;&nbsp;&nbsp;<span class="c5">my</span><span class="c1">.</span><span class="c6">dna</span> <span class="c3">+=</span> <span class="c7">code</span><span class="c3">;</span></p>
+                            <p>&nbsp;&nbsp;&nbsp;&nbsp;<span class="c8">share</span><span class="c1">(</span><span class="c2">my.dna</span><span class="c1">)</span><span class="c3">;</span></p>
+                            <p class="c3">}</p>
+                        </div>
+                    </header>
+                </div>
+            </div>
+        </div>
+
+    </header>
+
+    <!-- My name is Luke -->
+    <section class="my-name-is container single-vcenter">
+        <div class="grid-wrapper">
+            <div class="grid">
+                <div class="col">
+                    <header data-scroll-into-view="slide-in-up-group">
+                        <h1>Hello! My name</h1>
+                        <h1>is
+                            <mark>Luke</mark>
+                        </h1>
+                    </header>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!--@ include ../fabric/fabric.samplegrids @-->
+</main>
+
+<!--@ include footer @-->

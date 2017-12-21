@@ -23,7 +23,7 @@ OnLoad(function()
             var parallaxRatio = element.getAttribute("data-parallax-scroll-background");
 
             // Get bump down value
-            var bumpY = Math.max(0, -clientBounds.top * parallaxRatio);
+            var bumpY = clientBounds.top * parallaxRatio;
 
             // Apply it to the background position
             element.style.backgroundPositionY = bumpY + "px";

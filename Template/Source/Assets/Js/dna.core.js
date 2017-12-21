@@ -51,3 +51,14 @@ window.requestAnimationFrame =
     window.msRequestAnimationFrame ||
     function(f) { setTimeout(f, 1000/60) };
     
+// Get viewport height
+function ViewportHeight()
+{
+    return Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
+}
+    
+// Get viewport width
+function ViewportWidth()
+{
+    return Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
+}

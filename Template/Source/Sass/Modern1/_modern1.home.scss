@@ -1,0 +1,204 @@
+// All sections on home page should fill the page at least
+// for a nice spaced out effect
+.home > section, .home > header
+{
+    // Fill the page at least
+    min-height: 100vh;
+}
+
+.mascot-header
+{
+    // Remove the normal padding push-down to go past top menu
+    // as instead we vertically center this section
+    @include media($breakpoint-desktop)
+    {
+        padding-top: 0;
+    }
+    @include media($breakpoint-laptop)
+    {
+        padding-top: 0;
+    }
+
+    // Holds the mascot and the particle effect
+    .mascot-container
+    {
+        // Position relative so absolute position particles are relative to this
+        position: relative;
+
+        // Mascot background
+        .mascot-background
+        {
+            // Slide in from left
+            @extend .slide-in-left-shake;
+
+            // Decent size
+            height: 70vh;
+
+            @include media($breakpoint-below-laptop)
+            {
+                height: 50vh;
+            }
+
+            // Mascot background image
+            background-image: url('/Assets/Images/mascot.png');
+
+            // Shrink to fit
+            background-size: contain;
+
+            // Don't repeat image
+            background-repeat: no-repeat;
+
+            // Keep him to the center
+            background-position: center;
+
+            // On mobile...
+            @include media($breakpoint-below-laptop)
+            {
+                // Center image
+                background-position: center top;    
+            }
+        }
+
+        // Particles above mascots hands
+        .mascot-particles
+        {   
+            // Float to simply overlay on mascot image
+            float: right;
+            
+            // Full width so float acts like position absolute
+            // (but will allow us to horizontally center later)
+            // NOTE: Offset slightly to right as our image is slightly offset
+            width: 93%;
+
+            > div
+            {
+                // Add particle effects
+                @extend .particles;
+            
+                // Hide behind mascot
+                z-index: -1;
+        
+                // Height to match image
+                height: 25vh;
+
+                // Center horizontally
+                margin: auto;
+                
+                // Set width based on image   
+                width: 44vh;
+                                    
+                // On mobile...
+                @include media($breakpoint-below-laptop)
+                {             
+                    // Set width based on image   
+                    width: 35vh;
+
+                    // Limit max width once image hits its full size
+                    max-width: 54vw;
+
+                    // Limit height once background image scales to full size
+                    max-height: 25vw;
+
+                    // Height sizes based on width
+                    height: 20vh;
+                }
+
+
+                @include media($breakpoint-mobile)
+                {
+                    // Limit max width once image hits its full size
+                    //max-width: 60vw;                
+                }
+            }
+        }
+    }
+
+    .mascot-code
+    {        
+        // Center text
+        text-align: center;
+
+        // Inner text container
+        > div 
+        {
+            // Display inline block so can left-align text
+            display: inline-block;
+
+            // Left align text
+            text-align: left; 
+
+            // Large fonts for each size
+            font-size: $font-largest;
+
+            @include media($breakpoint-laptop)
+            {
+                font-size: $font-larger;
+            }
+            @include media($breakpoint-tablet)
+            {
+                font-size: $font-larger;
+            }
+            @include media($breakpoint-mobile)
+            {
+                font-size: $font-large;
+            }
+
+            // Reduce space between lines
+            line-height: 0.2;
+        }
+    
+        @include media($breakpoint-tablet)
+        {
+            padding-top: $spacing-larger;
+        }
+    
+        @include media($breakpoint-mobile)
+        {
+            padding-top: $spacing-small;
+        }
+
+        .c1 { color: #2ecbe6; }
+        .c2 { color: #ffffff; }
+        .c3 { color: #9b9b9b; }
+        .c4 { color: #9e0707; }
+        .c5 { color: #f29f69; }
+        .c6 { color: #e400ff; }
+        .c7 { color: #e3bd0c; }
+        .c8 { color: #04df23; }
+    }
+}
+
+.my-name-is
+{
+    background: $color1;
+
+    // The text inside header
+    header
+    {
+        // Works same space apart as the height of the text
+        line-height: 1;
+
+        // Center the text
+        text-align: center;
+
+        // Each line of text as a header
+        > h1
+        {
+            // Unusually large font
+            font-size: $font-largest * 2;
+
+            // Color in bright main color
+            color: $color2;
+        }
+
+        // Highlighted name
+        mark
+        {
+            // Remove browser style
+            background: transparent;
+
+            // Color in neutral bright
+            color: $color6;
+        }
+    }
+}
