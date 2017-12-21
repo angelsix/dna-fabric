@@ -19,10 +19,10 @@ Remove-Item Temp -Recurse -ErrorAction Ignore
 Copy-Item ../../Template/Source Temp/Template/Source -Recurse
 
 # Remove unnecessary files
-Remove-Item Temp/Template/Source/Html/modern1.dhtml
+Remove-Item Temp/Template/Source/Assets/Images -Recurse
+Remove-Item Temp/Template/Source/Assets/Js -Recurse
 Remove-Item Temp/Template/Source/Sass/modern1.scss
-Remove-Item Temp/Template/Source/Assets/Images -Recurse -ErrorAction Ignore
-Remove-Item Temp/Template/Source/Assets/Js -Recurse -ErrorAction Ignore
+Remove-Item Temp/Template/Source/Sass/Modern1 -Recurse
 
 # Create zip
 Compress-Archive Temp/Template/* "Templates/blank.zip"
@@ -39,9 +39,6 @@ Copy-Item ../../Template/Source Temp/Template/Source -Recurse
 
 # Remove unnecessary files
 Remove-Item Temp/Template/Source/Html/index.dhtml
-
-# Rename files
-Move-Item Temp/Template/Source/Html/modern1.dhtml Temp/Template/Source/Html/index.dhtml
 
 # Create zip
 Compress-Archive Temp/Template/* "Templates/modern1.zip"
