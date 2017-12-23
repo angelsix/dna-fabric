@@ -33,13 +33,13 @@ OnLoad(function()
                     return;
 
                 // If it is more than 25% in view...
-                if (item.getBoundingClientRect().y < (ViewportHeight() * 0.75))
+                if (item.getBoundingClientRect().top < (ViewportHeight() * 0.75))
                 {
                     // Add the desired class
                     item.classList.add(item.getAttribute("data-scroll-into-view"));
                 }
 
-                // TODO: Remove from list so doesn't procecc again
+                // TODO: Remove from list so doesn't process again
             });
         }
 
