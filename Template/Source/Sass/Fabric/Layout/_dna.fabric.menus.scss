@@ -18,7 +18,7 @@ ul.horizontal-menu
         > a
         {
             // Transition padding nicely
-            transition: padding $transition-normal, color  $transition-normal;
+            transition: padding $transition-normal, color $transition-normal;
 
             // Nice big font
             font-size: $font-large;

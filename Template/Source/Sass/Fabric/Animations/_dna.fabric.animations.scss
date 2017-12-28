@@ -3,27 +3,33 @@
 //
 .shake:hover 
 {
+  position: relative;
+
   animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
-  transform: translate3d(0, 0, 0);
 }
 
 @keyframes shake 
 {
-  10%, 90%      { transform: translate3d(-1px, 0, 0); }
-  20%, 80%      { transform: translate3d(2px, 0, 0); }
-  30%, 50%, 70% { transform: translate3d(-4px, 0, 0); }
-  40%, 60%      { transform: translate3d(4px, 0, 0); }
+  10%, 90%      { left: -1px; }
+  20%, 80%      { left: 2px; }
+  30%, 50%, 70% { left: -4px; }
+  40%, 60%      { left: 4px; }
 }
 
 //
 //   Slide in and fade in from above
 //
-.slide-in-down { animation: slide-in-down 2s; }
+.slide-in-down
+{
+  position: relative;
+
+  animation: slide-in-down $transition-normal; 
+}
 
 @keyframes slide-in-down
 {
-  0% { transform: translateY(-100%); opacity: 0; }
-  100% { transform: translateY(0%); opacity: 1; }
+  0% { top: -100%; opacity: 0; }
+  100% { top: 0; opacity: 1; }
 }
 
 //
@@ -69,29 +75,43 @@
 //
 .slide-in-left-shake 
 {
-  animation: slide-in-left-shake $transition-normal;
-  transform: translateX(0);
+  // Position relative so we can move to left
+  position: relative;
+
+  // Start hidden
+  opacity: 0;
+
+  animation: slide-in-left-shake $transition-slow;
+
+  // Keep animation properties once done
+  animation-fill-mode: forwards;    
 }
 
 @keyframes slide-in-left-shake
 {
-  0% { transform: translateX(-100%); opacity: 0; }  
-  70% { transform: translateX(2%); }  
-  75% { transform: translateX(-2%); }  
-  80% { transform: translateX(2%); }  
-  85% { transform: translateX(-1%); }  
-  95% { transform: translateX(1%); }  
-  100% { transform: translateX(0%); opacity: 1; }  
+  0% { left: -100%; opacity: 0; }  
+  40% { opacity: 0.1; }
+  70% { left: 2%; }  
+  75% { left: -2%; }  
+  80% { left: 2%; }  
+  85% { left: -1%; }  
+  95% { left: 1%; }  
+  100% { left: 0%; opacity: 1; }  
 }
 
 //
 //   Infinite animation simulating a bubble rising and fading out
 //
-.bubble-up { animation: bubble-up 3s ease-in infinite; }
+.bubble-up 
+{
+  animation: bubble-up 3s ease-in infinite; 
+}
 
 @keyframes bubble-up
 {
+  // NOTE: margin-top as a percentage seems to be based on the containers width
+  //       for some reason
   0% { opacity: 0; }    
-  20% { opacity: 1; transform: translateY(-20%); }    
-  100% { opacity: 0; transform: translateY(-1000%); }
+  20% { opacity: 1; margin-top: -1%; }    
+  100% { opacity: 0; margin-top: -50%; }
 }

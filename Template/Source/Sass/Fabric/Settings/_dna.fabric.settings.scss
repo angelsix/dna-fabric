@@ -43,10 +43,13 @@ $header-size-6: $base-font-size * 0.9 !default;
 // Animations
 $transition-time-normal: 0.7s !default;
 $transition-time-slow: 1s !default;
+$transition-time-slower: 2s !default;
 $transition-function: ease !default;
 
 // To be used like: transition: padding $transition-normal !default;
 $transition-normal: $transition-time-normal $transition-function !default;
+$transition-slow: $transition-time-slow $transition-function !default;
+$transition-slower: $transition-time-slower $transition-function !default;
 
 // Sit dialogs above general content
 $z-dialogs: 10 !default;

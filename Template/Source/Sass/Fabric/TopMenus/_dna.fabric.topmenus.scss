@@ -10,7 +10,7 @@
 }
 
 // Headers will be the top items on a page, so push them below menu
-header
+body > main > header
 {
     padding-top: $top-menu-pushdown;
 }

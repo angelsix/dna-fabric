@@ -85,7 +85,7 @@
             > a 
             {           
                 // Smooth transitions
-                transition: padding $transition-normal, transform $transition-normal;
+                transition: padding $transition-normal, transform $transition-normal, color $transition-normal;
 
                 // Add item padding just left/right for icon
                 padding: 0 $top-menu-standard-item-padding;
@@ -165,7 +165,7 @@
                 > a
                 {
                     // Smooth transition
-                    transition: padding $transition-normal, font-size $transition-normal;
+                    transition: padding $transition-normal, font-size $transition-normal, color $transition-normal;
 
                     // Item padding
                     padding: $top-menu-standard-item-padding;
