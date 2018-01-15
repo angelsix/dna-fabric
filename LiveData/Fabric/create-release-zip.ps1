@@ -23,6 +23,7 @@ Remove-Item Temp/Template/Source/Assets/Images -Recurse
 Remove-Item Temp/Template/Source/Assets/Js -Recurse
 Remove-Item Temp/Template/Source/Sass/modern1.scss
 Remove-Item Temp/Template/Source/Sass/Modern1 -Recurse
+Remove-Item Temp/Template/Source/Html/Modern1 -Recurse
 
 # Create zip
 Compress-Archive Temp/Template/* "Templates/blank.zip"
