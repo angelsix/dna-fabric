@@ -27,8 +27,18 @@
 // Button style
 a.button
 {
+    // Display inline block
+    display: inline-block;
+
     // Larger font
     font-size: $font-larger;
+
+    // On smaller screens...
+    @include media('below-lap')
+    {
+        // Larger font
+        font-size: $font-large;
+    }
 
     // Border
     border: 1px solid $color3;

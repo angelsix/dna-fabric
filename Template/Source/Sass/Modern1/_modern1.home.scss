@@ -188,12 +188,27 @@ section
         {
             // Unusually large font
             font-size: $font-largest * 2;
+
+            // On smaller screens...
+            @include media('below-lap')
+            {
+                // Large font
+                font-size: $font-largest;
+            }
         }
 
         // Match spacing between headers and paragraphs
         > h1, > p
         {
+            // Huge margin
             margin: $font-largest * 2 0;
+
+            // On smaller screens...
+            @include media('below-lap')
+            {
+                // Large margin
+                margin: $font-largest 0;
+            }
         }
 
         // Make all header paragraphs larger font
@@ -204,6 +219,13 @@ section
 
             // Larger font
             font-size: $font-larger;
+
+            // On smaller screens...
+            @include media('below-lap')
+            {
+                // Large font
+                font-size: $font-large;
+            }
         }
     }    
 }
