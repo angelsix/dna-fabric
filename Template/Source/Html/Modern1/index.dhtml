@@ -1,3 +1,4 @@
+<!--@ include variables @-->
 <!--@ include header @-->
 <!--@ include topmenu @-->
 
@@ -19,10 +20,29 @@
                 <div class="col one-half below-lap-one-whole">
                     <header class="mascot-code">
                         <div class="faded" data-delay-add="slide-in-up-group" data-delay="1">
-                            <p><span class="c1">while (</span><span class="c2">brain</span> <span class="c3">!=</span> <span class="c4">false</span><span class="c1">)</span></p>
+                            <p>
+                                <span class="c1">while (</span>
+                                <span class="c2">brain</span>
+                                <span class="c3">!=</span>
+                                <span class="c4">false</span>
+                                <span class="c1">)</span>
+                            </p>
                             <p class="c3">{</p>
-                            <p>&nbsp;&nbsp;&nbsp;&nbsp;<span class="c5">my</span><span class="c1">.</span><span class="c6">dna</span> <span class="c3">+=</span> <span class="c7">code</span><span class="c3">;</span></p>
-                            <p>&nbsp;&nbsp;&nbsp;&nbsp;<span class="c8">share</span><span class="c1">(</span><span class="c2">my.dna</span><span class="c1">)</span><span class="c3">;</span></p>
+                            <p>&nbsp;&nbsp;&nbsp;&nbsp;
+                                <span class="c5">my</span>
+                                <span class="c1">.</span>
+                                <span class="c6">dna</span>
+                                <span class="c3">+=</span>
+                                <span class="c7">code</span>
+                                <span class="c3">;</span>
+                            </p>
+                            <p>&nbsp;&nbsp;&nbsp;&nbsp;
+                                <span class="c8">share</span>
+                                <span class="c1">(</span>
+                                <span class="c2">my.dna</span>
+                                <span class="c1">)</span>
+                                <span class="c3">;</span>
+                            </p>
                             <p class="c3">}</p>
                         </div>
                     </header>
@@ -37,7 +57,7 @@
         <div class="grid-wrapper">
             <div class="grid">
                 <div class="col">
-                    <header data-scroll-into-view="slide-in-up-group">
+                    <header class="will-slide-in-up" data-scroll-into-view="slide-in-up-group">
                         <h1>Hello! My name</h1>
                         <h1>is
                             <mark>Luke</mark>
@@ -46,10 +66,100 @@
                 </div>
             </div>
         </div>
-
     </section>
 
-    <!--@ include ../fabric/fabric.samplegrids @-->
+    <!-- Also known as -->
+    <section class="also-known-as container single-vcenter">
+        <div class="grid-wrapper">
+            <div class="grid">
+                <div class="col">
+                    <header class="will-slide-in-up" data-scroll-into-view="slide-in-up-group">
+                        <h1>I'm also known as</h1>
+                        <div>
+                            <img src="$$Images.LogoText$$" />
+                        </div>
+                    </header>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- I develop -->
+    <section class="i-develop container single-vcenter">
+        <div class="grid-wrapper">
+            <div class="grid">
+                <div class="col">
+                    <header class="will-slide-in-up" data-scroll-into-view="slide-in-up-group">
+                        <h1>I develop software and hardware</h1>
+                        <p>
+                            I learned
+                            <mark class="alternative">software</mark> having taught myself C back in 1997 when I was 10, and since learned over 40
+                            languages on many platforms, programming comes as natural as speaking english. This allows me
+                            to focus on the task of solving the problem at hand
+                        </p>
+                        <p>
+                            I learned
+                            <mark>hardware</mark> through hands on. After blowing up a few transistors and designing a few thousand
+                            different circuits for real-world products, I soon found myself building complete SoC's (system
+                            on chips).
+                        </p>
+                    </header>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Learn for free -->
+    <section class="learn-for-free container single-vcenter">
+        <div class="grid-wrapper">
+            <div class="grid">
+                <div class="col">
+                    <header class="will-slide-in-up" data-scroll-into-view="slide-in-up-group">
+                        <h1>Learn for free</h1>
+                        <p>
+                            If you want to get some free knowledge and learn software development or other things I know
+                            I freely give away my knowledge on my <a href="$$Urls.YouTube$$">YouTube</a> channel.
+                        </p>
+                    </header>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hire me -->
+    <section class="hire-me container single-vcenter">
+        <div class="grid-wrapper">
+            <div class="grid">
+                <div class="col">
+                    <header class="will-slide-in-up" data-scroll-into-view="slide-in-up-group">
+                        <h1>Hire me</h1>
+                        <p>I do contracted work, offer training, guidance on projects or even complete projects from scratch.</p>
+                        <p>If you want to hire me, <a href="$$Urls.Contact$$">contact me</a> and we can work something out.</p>
+                    </header>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Are you still reading -->
+    <section class="are-you-still-reading container single-vcenter">
+        <div class="grid-wrapper">
+            <div class="grid">
+                <div class="col">
+                    <header class="will-slide-in-up" data-scroll-into-view="slide-in-up-group">
+                        <h1>Are you still here?</h1>
+                        <a class="button" href="$$Urls.AboutMe$$">Continue reading here</a>
+
+                        <h1>Or maybe you need my help?</h1>
+                        <p>websites, products, apps, teaching or training</p>
+                        <a class="button" href="$$Urls.Contact$$">Contact me</a>
+                    </header>
+                </div>
+            </div>
+        </div>
+    </section>
+
 </main>
+
 
 <!--@ include footer @-->

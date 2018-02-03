@@ -6,8 +6,8 @@
 
         <!-- Logo -->
         <div class="menu-logo">
-            <a href="/">
-                <img src="/Assets/Images/logo-flat.png" />
+            <a href="$$Urls.Home$$">
+                <img src="$$Images.LogoFlat$$" />
             </a>
         </div>
 
@@ -21,19 +21,19 @@
         <!-- Menu items -->
         <ul data-topmenu-class="expanded">
             <li>
-                <a href="#">blog</a>
+                <a href="$$Urls.AboutMe$$">about</a>
             </li>
             <li>
-                <a href="#">youtube</a>
+                <a href="$$Urls.Blog$$">blog</a>
             </li>
             <li>
-                <a href="#">solidworks</a>
+                <a href="$$Urls.YouTube$$">youtube</a>
             </li>
             <li>
-                <a href="#">fasetto</a>
+                <a href="$$Urls.SolidWorks$$">solidworks</a>
             </li>
             <li>
-                <a href="#">contact</a>
+                <a href="$$Urls.Contact$$">contact</a>
             </li>
         </ul>
 

@@ -168,8 +168,10 @@
     }
 }
 
-.my-name-is
+// Each section in the homepage
+section
 {
+    // Dark background color
     background: $color1;
 
     // The text inside header
@@ -186,19 +188,48 @@
         {
             // Unusually large font
             font-size: $font-largest * 2;
-
-            // Color in bright main color
-            color: $color2;
         }
 
-        // Highlighted name
-        mark
+        // Match spacing between headers and paragraphs
+        > h1, > p
         {
-            // Remove browser style
-            background: transparent;
-
-            // Color in neutral bright
-            color: $color6;
+            margin: $font-largest * 2 0;
         }
+
+        // Make all header paragraphs larger font
+        > p
+        {
+            // Larger spacing
+            line-height: 1.5;
+
+            // Larger font
+            font-size: $font-larger;
+        }
+    }    
+}
+
+// Color in bright main color
+.my-name-is header
+{
+    // Header is bright color
+    > h1 
+    {
+        // Bright theme color
+        color: $color2; 
+
+        // Mark inside here is bright neutral color
+        mark { color: $color6; }
     }
+}
+
+// Shake the large logo
+.also-known-as img { @extend .shake; }
+
+// Are you still reading 
+.are-you-still-reading header
+{
+    // First header is second theme color
+    > h1:first-of-type() { color: $color3; }
+    // Second header is first theme color
+    > h1:last-of-type() { color: $color2; }
 }
