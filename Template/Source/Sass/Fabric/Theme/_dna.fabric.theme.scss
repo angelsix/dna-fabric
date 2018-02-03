@@ -38,3 +38,16 @@ a
         }
     }
 }
+
+// Default style for marks
+mark
+{
+    // No background color
+    background-color: transparent;
+
+    // Foreground color of the themes bright color
+    color: $color2;
+}
+
+// Secondary theme color for alternative mark
+mark.alternative { color: $color3; }

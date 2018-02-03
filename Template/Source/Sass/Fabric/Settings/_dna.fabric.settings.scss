@@ -26,11 +26,11 @@ $font-larger: $base-font-size * 2 !default;
 $font-largest: $base-font-size * 3 !default;
 
 // Font weights
-$font-weight-light: 300 !default;
-$font-weight-normal: 400 !default;
-$font-weight-bold: 500 !default;
-$font-weight-black: 700 !default;
-$font-weight-heading: $font-weight-bold !default;
+$font-weight-light: lighter !default;
+$font-weight-normal: normal !default;
+$font-weight-bold: bold !default;
+$font-weight-black: bolder !default;
+$font-weight-heading: $font-weight-normal !default;
 
 // Header sizes
 $header-size-1: $base-font-size * 2 !default;

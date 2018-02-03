@@ -1,0 +1,16 @@
+<!--$
+
+<Data>
+
+    <Variable Name="Urls.Home">/</Variable>    
+    <Variable Name="Urls.AboutMe">/about</Variable>    
+    <Variable Name="Urls.Blog">/blog</Variable>    
+    <Variable Name="Urls.YouTube">/youtube</Variable>    
+    <Variable Name="Urls.SolidWorks">/solidworks</Variable>    
+    <Variable Name="Urls.Contact">/contact</Variable>    
+
+    <Variable Name="Images.LogoText">/Assets/Images/logo-text.png</Variable>
+    <Variable Name="Images.LogoFlat">/Assets/Images/logo-flat.png</Variable>
+</Data>
+
+$-->

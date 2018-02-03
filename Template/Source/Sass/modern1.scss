@@ -24,3 +24,54 @@
     @extend .shake;
 }
 
+// Button style
+a.button
+{
+    // Display inline block
+    display: inline-block;
+
+    // Larger font
+    font-size: $font-larger;
+
+    // On smaller screens...
+    @include media('below-lap')
+    {
+        // Larger font
+        font-size: $font-large;
+    }
+
+    // Border
+    border: 1px solid $color3;
+
+    // Border radius
+    border-radius: $spacing-normal;
+
+    // Padding inside button
+    padding: $spacing-normal;
+
+    // Text color bright neutral
+    color: $color6;
+
+    // Hover effect
+    @include hocus()
+    {
+        // Bright secondary color
+        color: $color3;
+    }
+}
+
+section.footer
+{
+    // Some padding around footer
+    padding: $spacing-normal;     
+
+    // Remove padding from section style
+    p 
+    {
+        // Smaller font size
+        font-size: $font-normal;
+
+        // Remove section margin style
+        margin: 0; 
+    }
+}
