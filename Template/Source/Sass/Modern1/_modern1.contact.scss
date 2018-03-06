@@ -1,0 +1,42 @@
+// All sections on home page should fill the page at least
+// for a nice spaced out effect
+.contact > section, .contact > header
+{
+    // Fill the page at least
+    min-height: 100vh;
+}
+
+// Main contact page
+.contact
+{
+    // Contact me section
+    .contact-me
+    {
+        // Main header
+        h1 
+        {
+            // Alternative color
+            @extend h1.alternative;
+
+            // Small bottom margin
+            margin-bottom: $spacing-normal;
+        }
+
+        // Paragraph right after a header
+        h1 + p
+        {
+            // No margin
+            margin: 0;
+        }
+
+        // Mascot background
+        .mascot-background
+        {
+            // Make image inline, centered and responsive
+            @extend .inline-whole-image;
+
+            // Mascot background image
+            background-image: url('/Assets/Images/mascot.png');
+        }
+    }
+}

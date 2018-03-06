@@ -1,0 +1,97 @@
+
+.solidworks
+{
+    // Match spacing between headers and paragraphs
+    .solidworks-macros, .soliddna { @extend .spaced-lines; }
+
+    // All sections on page should fill the page at least
+    // for a nice spaced out effect
+    > section, > header
+    {
+        // Fill the page at least
+        min-height: 100vh;
+    }
+
+    // Main header
+    .solidworks-macros h1, .batchprocess h1
+    {
+        // Alternative color
+        @extend h1.alternative;
+    }    
+
+    .solidworks-splash
+    {
+        // Make YouTube icon red
+        i { color: red; }
+    }
+    
+    .batchprocess
+    {
+        h1
+        {            
+            // Small bottom margin
+            margin-bottom: $spacing-normal;
+        }
+
+        // Paragraph right after a header
+        h1 + p
+        {
+            // No margin
+            margin: 0;
+        }
+    }
+
+    .batchprocess-i-want-it 
+    {
+        a.button { margin-top: $spacing-large; }
+    }
+
+    
+    .batchprocess-screenshot
+    {       
+        > div
+        {
+            // Full height
+            height: 100vh;
+
+            // Fill
+            background-size: cover;
+
+            // Don't repeat image
+            background-repeat: no-repeat;
+
+            // Keep image to right where BatchProcess is
+            background-position: center right;
+
+            // Bit of top/bottom margin
+            margin: $spacing-larger 0; 
+            
+            // Image background
+            background-image: url('/Assets/Images/batchprocess.jpg');        
+        }
+    }
+
+    .car
+    {       
+        > div
+        {
+            // Full height
+            height: 100vh;
+
+            // Fill
+            background-size: cover;
+
+            // Don't repeat image
+            background-repeat: no-repeat;
+
+            // Keep image in center
+            background-position: center;
+
+            // Bit of top/bottom margin
+            margin: $spacing-larger 0; 
+            
+            // Image background
+            background-image: url('/Assets/Images/car.jpg');        
+        }
+    }
+}

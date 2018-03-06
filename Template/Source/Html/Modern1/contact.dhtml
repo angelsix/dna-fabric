@@ -1,0 +1,51 @@
+<!--@ include variables @-->
+<!--@ include header @-->
+<!--@ include topmenu @-->
+
+<main class="contact">
+
+    <!-- Contact me splash -->
+    <section class="contact-me container single-vcenter">
+        <div class="grid-wrapper">
+            <div class="grid">
+                <div class="col">
+                    <header class="faded" data-delay-add="slide-in-up-group" data-delay="1">
+                        <h1>Contact Me</h1>
+                        <p>ask me anything... almost</p>
+                        <div class="mascot-background"></div>
+                    </header>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- My name is Luke -->
+    <section class="container single-vcenter">
+        <div class="grid-wrapper">
+            <div class="grid">
+                <div class="col">
+
+                    <header class="will-slide-in-up" data-scroll-into-view="slide-in-up-group">
+
+                        <p>Contacting me is simple, my name is
+                            <strong>Luke</strong>.</p>
+                        <p>Drop me an email at
+                            <a href="mailto:$$EmailAddress$$">$$EmailAddress$$</a>.</p>
+                        <p>For all you socialites, sorry I don't do Facebook or any other form of social media about my
+                            personal life.
+                            <a href="$$Urls.External.ILikeMyPrivacy$$" target="_blank">I like my privacy</a>.</p>
+
+                        <p>I do have a Twitter for replying to my Blog, YouTube and knowledge sharing efforts.
+                            <a href="$$Urls.External.Twitter$$" target="_blank">Tweet me</a>.</p>
+
+                    </header>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+
+<!--@ include footer @-->
