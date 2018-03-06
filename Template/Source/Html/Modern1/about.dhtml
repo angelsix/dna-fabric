@@ -1,5 +1,7 @@
+<!--@ output about @-->
+<!--@ output ..\ServerRoot\Views\Home\About.cshtml:server @-->
 <!--@ include variables @-->
-<!--@ include header @-->
+<!--@ include header:! @-->
 <!--@ include topmenu @-->
 
 <main class="about">
@@ -387,4 +389,4 @@
 </main>
 
 
-<!--@ include footer @-->
+<!--@ include footer:! @-->

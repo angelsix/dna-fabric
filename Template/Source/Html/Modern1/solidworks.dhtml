@@ -1,6 +1,9 @@
+<!--@ output solidworks @-->
+<!--@ output ..\ServerRoot\Views\Home\SolidWorks.cshtml:server @-->
 <!--@ include variables @-->
-<!--@ include header @-->
+<!--@ include header:! @-->
 <!--@ include topmenu @-->
+
 
 <main class="solidworks">
 
@@ -157,10 +160,10 @@
                     <header class="will-slide-in-up" data-scroll-into-view="slide-in-up-group">
                         <h1>What can BatchProcess do for me?</h1>
                         <p>The best way to learn BatchProcess is to
-                            <a href="$$Urls.Download.BatchProcess$$" target="_blank">download</a> and install it, then open up
+                            <a href="$$Urls.Download.BatchProcess$$">download</a> and install it, then open up
                             <strong>SolidWorks</strong> and start experimenting.</p>
                         <p>You can also check out the tutorial and
-                            <a href="$$Urls.Download.BatchProcessGuide$$" target="_blank">getting started guide</a>.</p>
+                            <a href="$$Urls.Download.BatchProcessGuide$$">getting started guide</a>.</p>
                     </header>
                 </div>
             </div>
@@ -179,7 +182,7 @@
                             <mark>super quick ROI.</mark>
                         </p>
                         <p>
-                            <a class="button" href="$$Urls.Download.BatchProcess$$" target="_blank">Download BatchProcess</a>
+                            <a class="button" href="$$Urls.Download.BatchProcess$$">Download BatchProcess</a>
                         </p>
                     </header>
                 </div>
@@ -190,4 +193,4 @@
 </main>
 
 
-<!--@ include footer @-->
+<!--@ include footer:! @-->
