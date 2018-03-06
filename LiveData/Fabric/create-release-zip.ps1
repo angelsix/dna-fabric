@@ -5,25 +5,33 @@ $version = Select-String -path ./dna.live.config '("version": ")(.*)",' -AllMatc
 Write-Host "Creating archive version $version"
 
 # Remove old templates
-Remove-Item Templates/blank.zip -ErrorAction Ignore
-Remove-Item Templates/modern1.zip -ErrorAction Ignore
+Remove-Item Templates/blank.zip -ErrorAction Ignore -Force
+Remove-Item Templates/modern1.zip -ErrorAction Ignore -Force
+
+# Ensure Templates folder exists
+If(!(Test-Path Templates))
+{
+      New-Item -ItemType Directory -Force -Path Templates
+}
 
 #   ----------------
 #    Blank Template
 #   ----------------
 
 # Clean temp folder
-Remove-Item Temp -Recurse -ErrorAction Ignore
+Remove-Item Temp -Recurse -ErrorAction Ignore -Force
+Remove-Item Temp -Recurse -ErrorAction Ignore -Force
 
 # Copy source
-Copy-Item ../../Template/Source Temp/Template/Source -Recurse
+Copy-Item ../../Template Temp/Template -Recurse
 
 # Remove unnecessary files
-Remove-Item Temp/Template/Source/Assets/Images -Recurse
-Remove-Item Temp/Template/Source/Assets/Js -Recurse
-Remove-Item Temp/Template/Source/Sass/modern1.scss
-Remove-Item Temp/Template/Source/Sass/Modern1 -Recurse
-Remove-Item Temp/Template/Source/Html/Modern1 -Recurse
+Remove-Item Temp/Template/Source/Assets/Images -Recurse -Force
+Remove-Item Temp/Template/Source/Assets/Js -Recurse -Force
+Remove-Item Temp/Template/Source/Sass/modern1.scss -Force
+Remove-Item Temp/Template/Source/Sass/Modern1 -Recurse -Force
+Remove-Item Temp/Template/Source/Html/Modern1 -Recurse -Force
+Remove-Item Temp/Template/ServerRoot -Recurse -ErrorAction Ignore -Force
 
 # Create zip
 Compress-Archive Temp/Template/* "Templates/blank.zip"
@@ -33,13 +41,19 @@ Compress-Archive Temp/Template/* "Templates/blank.zip"
 #   -------------------
 
 # Clean temp folder
-Remove-Item Temp -Recurse -ErrorAction Ignore
+Remove-Item Temp -Recurse -ErrorAction Ignore -Force
 
 # Copy source
-Copy-Item ../../Template/Source Temp/Template/Source -Recurse
+Copy-Item ../../Template Temp/Template -Recurse
 
 # Remove unnecessary files
-Remove-Item Temp/Template/Source/Html/index.dhtml
+Remove-Item Temp/Template/Source/Html/index.dhtml -Force
+Remove-Item Temp/Template/ServerRoot/.vs -Recurse -ErrorAction Ignore -Force
+Remove-Item Temp/Template/ServerRoot/bin -Recurse -ErrorAction Ignore -Force
+Remove-Item Temp/Template/ServerRoot/obj -Recurse -ErrorAction Ignore -Force
+Remove-Item Temp/Template/ServerRoot/Controllers -Recurse -ErrorAction Ignore -Force
+Remove-Item Temp/Template/ServerRoot/Views -Recurse -ErrorAction Ignore -Force
+Remove-Item Temp/Template/ServerRoot/wwwroot -Recurse -ErrorAction Ignore -Force
 
 # Create zip
 Compress-Archive Temp/Template/* "Templates/modern1.zip"
@@ -51,4 +65,4 @@ Compress-Archive dna.live.config "Releases/$version.zip" -Update
 Compress-Archive readme.md "Releases/$version.zip" -Update
 
 # Clean temp folder
-Remove-Item Temp -Recurse -ErrorAction Ignore
+Remove-Item Temp -Recurse -ErrorAction Ignore -Force
