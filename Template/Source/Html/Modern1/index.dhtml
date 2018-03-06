@@ -1,5 +1,7 @@
+<!--@ output index @-->
+<!--@ output ..\ServerRoot\Views\Home\Index.cshtml:server @-->
 <!--@ include variables @-->
-<!--@ include header @-->
+<!--@ include header:! @-->
 <!--@ include topmenu @-->
 
 <main class="home">
@@ -162,4 +164,4 @@
 </main>
 
 
-<!--@ include footer @-->
+<!--@ include footer:! @-->

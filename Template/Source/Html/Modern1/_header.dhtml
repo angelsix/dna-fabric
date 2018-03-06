@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Title</title>
+    <title>$$WebsiteTitle$$</title>
     <link href="/Assets/Css/modern1.css" rel="stylesheet" type="text/css" />
     <script type="text/javascript" src="/Assets/Js/dna.core.js"></script>
     <script type="text/javascript" src="/Assets/Js/dna.scroll.core.js"></script>

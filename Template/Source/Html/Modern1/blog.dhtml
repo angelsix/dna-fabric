@@ -1,5 +1,7 @@
+<!--@ output blog @-->
+<!--@ output ..\ServerRoot\Views\Home\Blog.cshtml:server @-->
 <!--@ include variables @-->
-<!--@ include header @-->
+<!--@ include header:! @-->
 <!--@ include topmenu @-->
 
 <main class="blog">
@@ -63,4 +65,4 @@
 </main>
 
 
-<!--@ include footer @-->
+<!--@ include footer:! @-->

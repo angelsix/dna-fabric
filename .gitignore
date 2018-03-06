@@ -6,8 +6,10 @@
 *.user
 *.sln.docstates
 
-# Exclude WebRoot folder except Fonts
+# Exclude generated folders
 Template/WebRoot/
+Template/Source/Assets/Css/
+Template/Source/Assets/Files/
 
 project.lock.json
 

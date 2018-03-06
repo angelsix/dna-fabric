@@ -2,6 +2,8 @@
 
 <Data>
 
+    <Variable Name="WebsiteTitle">AngelSix - Free Your Mind</Variable>    
+
     <Variable Name="Urls.Home">/</Variable>    
     <Variable Name="Urls.AboutMe">/about</Variable>    
     <Variable Name="Urls.Blog">/blog</Variable>    

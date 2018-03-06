@@ -1,5 +1,7 @@
+<!--@ output youtube @-->
+<!--@ output ..\ServerRoot\Views\Home\YouTube.cshtml:server @-->
 <!--@ include variables @-->
-<!--@ include header @-->
+<!--@ include header:! @-->
 <!--@ include topmenu @-->
 
 <main class="youtube">
@@ -68,4 +70,4 @@
 </main>
 
 
-<!--@ include footer @-->
+<!--@ include footer:! @-->

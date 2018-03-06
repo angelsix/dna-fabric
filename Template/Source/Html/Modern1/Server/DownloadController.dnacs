@@ -1,0 +1,18 @@
+<!--@ output ..\ServerRoot\Controllers\DownloadController.cs @-->
+<!--@ include ..\variables @-->
+using Microsoft.AspNetCore.Mvc;
+
+namespace Fabric.Modern1.Server
+{
+    public class DownloadController : Controller
+    {
+        [Route("$$Urls.Download.BatchProcess$$")]
+        public IActionResult DownloadBatchProcess() => File("/Assets/Files/BatchProcess.zip", "application/x-zip-compressed", "BatchProcess.zip");
+
+        [Route("$$Urls.Download.BatchProcessGuide$$")]
+        public IActionResult DownloadBatchProcessGuide() => File("/Assets/Files/BatchProcess.pdf", "application/pdf", "BatchProcess.pdf");
+
+        [Route("$$Urls.Download.SolidWorksFiles$$")]
+        public IActionResult SolidWorksFiles() => File("/Assets/Files/SolidWorksFiles.zip", "application/x-zip-compressed", "SolidWorksFiles.zip");
+    }
+}
