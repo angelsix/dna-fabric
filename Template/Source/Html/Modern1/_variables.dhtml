@@ -9,7 +9,41 @@
     <Variable Name="Urls.SolidWorks">/solidworks</Variable>    
     <Variable Name="Urls.Contact">/contact</Variable>    
 
-    <Variable Name="Images.LogoText">/Assets/Images/logo-text.png</Variable>
+    <Variable Name="Urls.Download.SolidWorksFiles">/download/solidworks-files</Variable>
+    <Variable Name="Urls.Download.BatchProcessGuide">/download/batchprocess-guide</Variable>
+    <Variable Name="Urls.Download.BatchProcess">/download/batchprocess</Variable>
+
+    <Variable Name="Urls.External.Blog">http://blog.angelsix.com</Variable>    
+    <Variable Name="Urls.External.ILikeMyPrivacy">https://en.wikipedia.org/wiki/Privacy_concerns_with_social_networking_services</Variable>
+    <Variable Name="Urls.External.Twitter">https://twitter.com/angelsixuk</Variable>
+    <Variable Name="Urls.External.YouTube">https://youtube.com/c/angelsix</Variable>
+    <Variable Name="Urls.External.SolidDna">https://github.com/angelsix/solidworks-api</Variable>
+    <Variable Name="Urls.External.GitHub">https://github.com/angelsix</Variable>
+
+    <Variable Name="Urls.External.AboutWorms">https://www.team17.com/games/worms/</Variable>
+    <Variable Name="Urls.External.AboutRaptor">https://en.wikipedia.org/wiki/Raptor:_Call_of_the_Shadows</Variable>
+    <Variable Name="Urls.External.AboutSoundBlaster">http://www.soundblaster.com/</Variable>
+    <Variable Name="Urls.External.AboutAdobeFlash">https://www.adobe.com/uk/products/animate.html</Variable>
+    <Variable Name="Urls.External.AboutActionScript">https://en.wikipedia.org/wiki/ActionScript</Variable>
+    <Variable Name="Urls.External.AboutPong">https://en.wikipedia.org/wiki/Pong</Variable>
+    <Variable Name="Urls.External.AboutTicTacToe">https://en.wikipedia.org/wiki/Tic-tac-toe</Variable>
+    <Variable Name="Urls.External.AboutPacman">http://www.financereference.com/learn/pac-man</Variable>
+    <Variable Name="Urls.External.AboutSnooker">https://en.wikipedia.org/wiki/Snooker</Variable>
+    <Variable Name="Urls.External.AboutMicrosoftOffice">https://www.office.com/</Variable>
+    <Variable Name="Urls.External.AboutDogGearboxes">http://www.superstreetonline.com/how-to/transmission-drivetrain/impp-1109-synchromesh-vs-dog-box/</Variable>
+    <Variable Name="Urls.External.AboutAutodeskInventor">https://www.autodesk.co.uk/products/inventor/overview</Variable>
+    <Variable Name="Urls.External.AboutCMM">https://en.wikipedia.org/wiki/Coordinate-measuring_machine</Variable>
+    <Variable Name="Urls.External.AboutCNC">https://en.wikipedia.org/wiki/Numerical_control</Variable>
+    <Variable Name="Urls.External.AboutPunchedTape">https://en.wikipedia.org/wiki/Punched_tape</Variable>
+    <Variable Name="Urls.External.AboutTrailers">https://en.wikipedia.org/wiki/Semi-trailer</Variable>
+    <Variable Name="Urls.External.AboutSolidWorks">http://www.solidworks.com/</Variable>
+    <Variable Name="Urls.External.AboutSolidWorksAPI">https://www.solidworks.com/sw/support/api-support.htm</Variable>
+    <Variable Name="Urls.External.AboutPICChips">http://www.microchip.com/design-centers/microcontrollers</Variable>
+
+    
+    <Variable Name="EmailAddress">contact@angelsix.com</Variable>
+
+<Variable Name="Images.LogoText">/Assets/Images/logo-text.png</Variable>
     <Variable Name="Images.LogoFlat">/Assets/Images/logo-flat.png</Variable>
 </Data>
 

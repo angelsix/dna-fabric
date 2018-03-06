@@ -1,0 +1,71 @@
+<!--@ include variables @-->
+<!--@ include header @-->
+<!--@ include topmenu @-->
+
+<main class="youtube">
+
+    <!-- youtube splash -->
+    <section class="youtube-splash container single-vcenter">
+        <div class="grid-wrapper">
+            <div class="grid">
+                <div class="col">
+                    <header class="faded" data-delay-add="slide-in-up-group" data-delay="1">
+                        <h1>
+                            <i class="icon ion-social-youtube"></i> AngelSix</h1>
+                        <p>sharing my knowledge
+                            <br>through the power of video</p>
+                        <div class="logo-background"></div>
+                    </header>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog details list -->
+    <section class="knowledge-is-power container single-vcenter">
+        <div class="grid-wrapper">
+            <div class="grid">
+                <div class="col">
+                    <header class="will-slide-in-up" data-scroll-into-view="slide-in-up-group">
+                        <h1>The best things in life are
+                            <mark>free</mark>
+                        </h1>
+                        <p>I am a strong believer in giving away what I know for free, so anyone can learn regardless of class</p>
+                        <p>Learning live through video is much easier than reading a book. I do videos on many
+                            <mark class="alternative">software</mark> languages from C#, .Net Core, WPF, ASP.Net, MVC, Javascript HTML and more</p>
+                        <p>Over time I will also do videos on
+                            <mark>hardware</mark> including MCU, CPU, Soldering, PCB Design, Embedded systems and more</p>
+                    </header>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Full screen image -->
+    <section class="youtube-screenshots">
+        <div class="grid faded slower" data-scroll-into-view="slide-fade-in-group" data-scroll-into-view-offset="35">
+            <div class="col one-half below-lap-one-whole"></div>
+            <div class="col one-half below-lap-one-whole"></div>
+            <div class="col one-half below-lap-one-whole"></div>
+            <div class="col one-half below-lap-one-whole"></div>
+        </div>
+    </section>
+
+    <!-- take-me-there -->
+    <section class="take-me-there container single-vcenter">
+        <div class="grid-wrapper">
+            <div class="grid">
+                <div class="col">
+                    <header class="will-slide-in-up" data-scroll-into-view="slide-in-up-group">
+                        <h1>Let's start learning!</h1>
+                        <a class="button" href="$$Urls.External.YouTube$$" target="_blank"><i class="icon ion-social-youtube"></i> AngelSix</a>
+                    </header>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+
+<!--@ include footer @-->

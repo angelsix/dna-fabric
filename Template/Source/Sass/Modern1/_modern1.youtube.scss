@@ -1,0 +1,50 @@
+
+.youtube
+{
+    // All sections on page should fill the page at least
+    // for a nice spaced out effect
+    > section, > header
+    {
+        // Fill the page at least
+        min-height: 100vh;
+    }
+
+    // Main header
+    knowledge-is-power h1 
+    {
+        // Alternative color
+        @extend h1.alternative;
+    }    
+
+    .youtube-splash, .take-me-there
+    {
+        // Make YouTube icon red
+        i { color: red; }
+    }
+
+    .youtube-screenshots
+    {
+        .col
+        {
+            // Fit 4 images on the screen
+
+            // Half height of the screen
+            height: 50vh;
+
+            // Fill
+            background-size: cover;
+
+            // Don't repeat image
+            background-repeat: no-repeat;
+
+            // Keep image in center
+            background-position: center;            
+
+            // Image backgrounds
+            &:nth-child(1) { background-image: url('/Assets/Images/youtube1.jpg'); }
+            &:nth-child(2) { background-image: url('/Assets/Images/youtube2.jpg'); }
+            &:nth-child(3) { background-image: url('/Assets/Images/youtube3.jpg'); }
+            &:nth-child(4) { background-image: url('/Assets/Images/youtube4.jpg'); }
+        }
+    }
+}

@@ -1,0 +1,390 @@
+<!--@ include variables @-->
+<!--@ include header @-->
+<!--@ include topmenu @-->
+
+<main class="about">
+
+    <!-- Full screen image -->
+    <section class="about-splash">
+        <div class="faded slower" class="faded" data-delay-add="slide-fade-in" data-delay="1"></div>
+    </section>
+
+    <!-- Start -->
+    <section class="start container single-vcenter">
+        <div class="grid-wrapper">
+            <div class="grid">
+                <div class="col">
+                    <header class="will-slide-in-up" data-scroll-into-view="slide-in-up-group">
+                        <p>I get asked a lot about myself.</p>
+                        <p>As I am not one to post socially or talk much
+                            <mark>about myself</mark>, most people only find out from
+                            <mark class="alternative">asking my directly</mark>. This page is therefore for those who would like to know a little about
+                            me.
+                        </p>
+                    </header>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Full screen image -->
+    <section class="younger-splash">
+        <div class="faded slower" data-scroll-into-view="slide-fade-in" data-scroll-into-view-offset="80"></div>
+    </section>
+
+    <!-- Growing Up -->
+    <section class="growing-up container single-vcenter">
+        <div class="grid-wrapper">
+            <div class="grid">
+                <div class="col">
+                    <header class="will-slide-in-up" data-scroll-into-view="slide-in-up-group">
+                        <h1>Growing Up</h1>
+                        <p>Growing up I found myself interested in sports and games like any other youngster.</p>
+                        <p>My best talent in highschool was
+                            <strong>Maths</strong>. I was very good at that. I took higher level math papers back in primary school
+                            (elementary for the americans) that were designed for people 5 years older, and I got very high
+                            scores on them.</p>
+                        <p>When I was
+                            <strong>10</strong>, I had my first computer for Christmas. It was an
+                            <strong>Intel Pentium 300Mhz</strong> with a huge
+                            <strong>500MB hard drive</strong> and a CRT monitor. It cost a lot, but I loved it. My computer interests
+                            started there. Naturally with games. I used to play
+                            <a href="$$Urls.External.AboutWorms$$" target="_blank">Worms</a> and
+                            <a href="$$Urls.External.AboutRaptor$$" target="_blank">Raptor</a>. It was all good, until I got issues on the computer. Back then I had nobody to talk
+                            to on how to solve issues such as my sound not working in Raptor, which was a serious matter
+                            as a child and needed solving. So I took it upon myself to
+                            <strong>figure out and fix the issue myself
+                            </strong>, which involved configuring a custom
+                            <a href="$$Urls.External.AboutSoundBlaster$$" target="_blank">SoundBlaster</a> driver to work with my non-Soundblaster sound card.</p>
+                        <p>Playing games was great, but soon I wanted to understand how exactly games were made, and to make
+                            my own. I got myself a copy of
+                            <a href="$$Urls.External.AboutAdobeFlash$$" target="_blank">Adobe Flash</a> and started playing with
+                            <a href="$$Urls.External.AboutActionScript$$" target="_blank">ActionScript</a> to create some simple games like
+                            <a href="$$Urls.External.AboutPong$$" target="_blank">Pong</a>,
+                            <a href="$$Urls.External.AboutTicTacToe$$" target="_blank">Tic-Tac-Toe</a>, and a few custom space games I designed. My
+                            <strong>maths knowledge</strong> really helped here as using
+                            <strong>calculations and equations</strong> played a large part in making games.</p>
+                    </header>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Growing Up -->
+    <section class="growing-up-image container single-vcenter">
+        <div class="grid">
+            <div class="col">
+                <header class="will-slide-in-up" data-scroll-into-view="slide-in-up-group" data-scroll-into-view-offset="60">
+                    <p>
+                        <img src="/Assets/Images/egypt.jpg" />
+                    </p>
+                </header>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Growing Up More -->
+    <section class="growing-up container single-vcenter">
+        <div class="grid-wrapper">
+            <div class="grid">
+                <div class="col">
+                    <header class="will-slide-in-up" data-scroll-into-view="slide-in-up-group">
+                        <p>
+                            <a href="$$Urls.External.AboutAdobeFlash$$" target="_blank">Adobe Flash</a> allowed me to
+                            <strong>make visual games without having to do much</strong> in terms of rendering graphics. So naturally
+                            I wanted to know how to do the graphics myself.</p>
+                        <p>One thing about me is I have to
+                            <strong>know exactly how things work</strong>, right down to the fundamental building blocks. It's what
+                            lead me to learn DirectX, Assembly languages for processors and MCU's, building low-level hardware
+                            and coding kernel drivers.</p>
+                        <p>I went from Adobe Flash to
+                            <strong>C</strong>, then to
+                            <strong>C++</strong> and
+                            <strong>DirectX</strong>. I made some 2D games like
+                            <a href="$$Urls.External.AboutPacman$$" target="_blank">Pacman</a> and
+                            <a href="$$Urls.External.AboutSnooker$$" target="_blank">Snooker</a> and then went onto
+                            <strong>making 3D games</strong>.</p>
+                    </header>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Itch Image -->
+    <section class="the-itch-image container single-vcenter">
+        <div class="grid">
+            <div class="col">
+                <header class="will-slide-in-up" data-scroll-into-view="slide-in-up-group" data-scroll-into-view-offset="60">
+                    <p>
+                        <img src="/Assets/Images/itch.jpg" />
+                    </p>
+                </header>
+            </div>
+        </div>
+    </section>
+
+    <!-- The Itch -->
+    <section class="the-itch container single-vcenter">
+        <div class="grid-wrapper">
+            <div class="grid">
+                <div class="col">
+                    <header class="will-slide-in-up" data-scroll-into-view="slide-in-up-group">
+                        <h1>The Itch</h1>
+                        <p>By now I was about
+                            <strong>13</strong> and started getting interested in business. My
+                            <strong>parents were self-employed</strong> and ran their own business. Naturally that rubbed off onto
+                            me, although nobody in my family has any computer knowledge other than me. I was
+                            <strong>bored with making games</strong>. </p>
+                        <p>I had learned all I could in games and wanted to know how computer programs worked in general, such
+                            as
+                            <a href="$$Urls.External.AboutMicrosoftOffice$$" target="_blank">Microsoft Office</a> and other general applications. So began my venture into custom applications.</p>
+                        <p>I started making applications of various types and styles, from
+                            <strong>calculators</strong> to
+                            <strong>3D engines</strong> to
+                            <strong>websites</strong>, along the way picking up knowledge of
+                            <strong>C#, ASP.Net, Javascript</strong> and many more languages. Once I had learned a certain number
+                            of languages they all came very easily and naturally to me.</p>
+                    </header>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Camel Image -->
+    <section class="camel-image container single-vcenter">
+        <div class="grid">
+            <div class="col">
+                <header class="will-slide-in-up" data-scroll-into-view="slide-in-up-group" data-scroll-into-view-offset="60">
+                    <p>
+                        <img src="/Assets/Images/camel.jpg" />
+                    </p>
+                </header>
+            </div>
+        </div>
+    </section>
+
+    <!-- Employment -->
+    <section class="employment container single-vcenter">
+        <div class="grid-wrapper">
+            <div class="grid">
+                <div class="col">
+                    <header class="will-slide-in-up" data-scroll-into-view="slide-in-up-group">
+                        <h1>Employment</h1>
+                        <p>My first job was actually as an
+                            <strong>apprentice in engineering</strong> designing
+                            <a href="$$Urls.External.AboutDogGearboxes$$" target="_blank">dog gearboxes</a> for rally cars. I did the designs in
+                            <a href="$$Urls.External.AboutAutodeskInventor$$" target="_blank">Autodesk Inventor</a>. The guys I worked with soon realised my potential in software and within
+                            6 months I was creating
+                            <strong>custom gear ratio calculators</strong> that create a gear change graph showing power to gear
+                            ratios and
+                            <strong>worked out the perfect time to change gear</strong>. Before long I was also building computers,
+                            fixing
+                            <a href="$$Urls.External.AboutCMM$$" target="_blank">CMM machines</a>, programming
+                            <a href="$$Urls.External.AboutCNC$$" target="_blank">CNC machines</a> and soldering up old
+                            <a href="$$Urls.External.AboutPunchedTape$$" target="_blank">punched tape printer</a> wiring.
+                        </p>
+                        <p>Moving on in my career I went into another CAD position, this time designing
+                            <a href="$$Urls.External.AboutTrailers$$" target="_blank">trailers</a> for trucks. This time in
+                            <a href="$$Urls.External.AboutSolidWorks$$" target="_blank">SolidWorks</a>. I started working with
+                            <strong>VBA Macros</strong> and the
+                            <a href="$$Urls.External.AboutSolidWorksAPI$$" target="_blank">SolidWorks API</a>.</p>
+                        <p>I got very good at SolidWorks programming and subsequently
+                            <strong>wrote 2 books on programming and automation</strong>
+                            aimed at SolidWorks. I sold them for many years, and recently decided to
+                            <a href="$$Urls.Download.SolidWorksFiles$$" target="_blank">release them for free</a>.</p>
+                        <p>As my career progressed I slowly started to earn enough money from my books and
+                            <a href="$$Urls.SolidWorks$$">BatchProcess</a> along with
+                            <strong>custom web design</strong> that I could support myself and so
+                            <strong>quit my job</strong> and went fully
+                            <strong>self-employed</strong>.</p>
+                    </header>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Self-employed Image -->
+    <section class="self-employed-image container single-vcenter">
+        <div class="grid">
+            <div class="col">
+                <header class="will-slide-in-up" data-scroll-into-view="slide-in-up-group" data-scroll-into-view-offset="60">
+                    <p>
+                        <img src="/Assets/Images/norway.jpg" />
+                    </p>
+                </header>
+            </div>
+        </div>
+    </section>
+
+    <!-- Entrepreneurship -->
+    <section class="entrepreneurship container single-vcenter">
+        <div class="grid-wrapper">
+            <div class="grid">
+                <div class="col">
+                    <header class="will-slide-in-up" data-scroll-into-view="slide-in-up-group">
+                        <h1>Entrepreneurship</h1>
+                        <p>Having enough money to make my way, I started
+                            <strong>venturing into hardware</strong>. I started by creating a product called
+                            <strong>Arbiter</strong> - a rapid fire controller for the
+                            <strong>Xbox</strong> and
+                            <strong>Playstation</strong>. I built it by programming the
+                            <a href="$$Urls.External.AboutPICChips$$" target="_blank">Microchip PIC chips</a> in assembly firstly, then C. I sold them online via an
+                            <strong>online shop I coded from scratch</strong>. </p>
+                        <p>The <strong>Arbiter</strong> was selling so well that I started
+                            <strong>expanding the online retail store</strong> into LEDs, screw drivers, hardware, health and beauty,
+                            electronics and more.
+                            <strong>Within 18 months</strong> I went from working at home to having
+                            <strong>2 buildings and 17 employees</strong> at the busiest period.</p>
+                        <p>At the same time, my other software venture with my close friend and business partner also took off,
+                            in a big way. I had no choice but to
+                            <strong>sell the online retail business</strong> and focus on the software venture.
+                        </p>
+                        <p>Over the following years my knowledge in software and hardware blossomed and I have a very broad
+                            yet complete knowledge in almost every software language out today, with a rapidly growing skillset
+                            in hardware design. I've worked with games, mobile apps, websites, commercial and industrial
+                            apps, military, mass market and many other areas.</p>
+                    </header>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sofa Image -->
+    <section class="sofa-image container single-vcenter">
+        <div class="grid">
+            <div class="col">
+                <header class="will-slide-in-up" data-scroll-into-view="slide-in-up-group" data-scroll-into-view-offset="60">
+                    <p>
+                        <img src="/Assets/Images/sofa.jpg" />
+                    </p>
+                </header>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lessons -->
+    <section class="lessons container single-vcenter">
+        <div class="grid-wrapper">
+            <div class="grid">
+                <div class="col">
+                    <header class="will-slide-in-up" data-scroll-into-view="slide-in-up-group">
+                        <h1>Lessons</h1>
+                        <p>I like to think I have learned a lot in a short space of time, with being in so many environments,
+                            <strong>running multiple businesses</strong> and having worked in the
+                            <strong>UK and US</strong>.</p>
+                        <p>
+                            If I could give anyone advice, here it is</p>
+                        <p>If something feels wrong, or too good to be true, personally or in business, it almost certainly
+                            is.
+                        </p>
+                        <p>Never hold onto money. Work for money to spend it and enjoy. Holding onto money just leads to depending
+                            on it. Be sensible, pay your bills and after that, spend the extra on yourself and loved ones.
+                            The best thing I have ever done in life is not care about how much money I do or do not have.</p>
+                        <p>Value the people that are there for you without asking or expecting in return. Money can buy everything
+                            except true friendship, trust and honesty. If you find people that have the former, respect them
+                            and treat them well.</p>
+                    </header>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- My Skills -->
+    <section class="my-skills container single-vcenter">
+        <div class="grid-wrapper">
+            <div class="grid">
+                <div class="col">
+                    <header class="will-slide-in-up" data-scroll-into-view="slide-in-up-group">
+                        <h1>My Skills</h1>
+                        <p>For those interested in exact details or considering me for a project and need to know particulars,
+                            here is a list of the main languages, methodologies and platforms I am well-versed in.</p>
+                        <ul>
+                            <li>.Net Core</li>
+                            <li>Agile</li>
+                            <li>Ajax</li>
+                            <li>Android Apps</li>
+                            <li>Atlassian BitBucket</li>
+                            <li>Atlassian Jira</li>
+                            <li>Altium Designer</li>
+                            <li>Arduino</li>
+                            <li>ASP.Net Core</li>
+                            <li>Assembly x86</li>
+                            <li>Assembly Microchip PIC8/16/32</li>
+                            <li>Assembly ARM MCUs (NXP, Cypress)</li>
+                            <li>Autodesk Inventor</li>
+                            <li>Azure (Microsoft cloud)</li>
+                            <li>Bash (Linux)</li>
+                            <li>Basic</li>
+                            <li>Batch (Windows/Dos)</li>
+                            <li>C</li>
+                            <li>C++ (Including MCU/PSoC/CPU code)</li>
+                            <li>C#</li>
+                            <li>Cadsoft Eagle</li>
+                            <li>CSS</li>
+                            <li>Git</li>
+                            <li>HTML</li>
+                            <li>IIS</li>
+                            <li>iOS/iPad Apps</li>
+                            <li>Java</li>
+                            <li>JavaScript</li>
+                            <li>JSON</li>
+                            <li>jQuery</li>
+                            <li>Kernel code (Linux kernel)</li>
+                            <li>KnockoutJS</li>
+                            <li>Labcenter Proteus</li>
+                            <li>MVC</li>
+                            <li>MVVM</li>
+                            <li>Photoshop</li>
+                            <li>PHP</li>
+                            <li>PostgreSQL</li>
+                            <li>Raspberry Pi</li>
+                            <li>SolidWorks</li>
+                            <li>SolidWorks API (VBA, Macros, C#)</li>
+                            <li>SQL Server</li>
+                            <li>VBA, Visual Basic, Visual Basic .Net</li>
+                            <li>WCF</li>
+                            <li>Wix Installer</li>
+                            <li>WPF</li>
+                            <li>Xamarin</li>
+                            <li>Xbox &amp; Playstation hardware integration</li>
+                            <li>Xcode</li>
+                            <li>uBoot</li>
+                        </ul>
+                    </header>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- On ending -->
+    <section class="on-ending container single-vcenter">
+        <div class="grid-wrapper">
+            <div class="grid">
+                <div class="col">
+                    <header class="will-slide-in-up" data-scroll-into-view="slide-in-up-group">
+                        <h1>On Closing...</h1>
+
+                        <p>If you made it here I am impressed. That's a lot of reading
+                            <i class="icon ion-happy"></i>
+                        </p>
+                        <p>
+                            <a class="button" href="$$Urls.Contact$$">Contact Me</a>
+                        </p>
+                        <p>
+                            <a class="button youtube" href="$$Urls.YouTube$$">
+                                <i class="icon ion-social-youtube"></i> AngelSix</a>
+                        </p>
+                        <p>
+                            <a class="button" href="$$Urls.External.GitHub$$" target="_blank">My Code</a>
+                        </p>
+                    </header>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+
+<!--@ include footer @-->

@@ -1,0 +1,193 @@
+<!--@ include variables @-->
+<!--@ include header @-->
+<!--@ include topmenu @-->
+
+<main class="solidworks">
+
+    <!-- youtube splash -->
+    <section class="solidworks-splash container single-vcenter">
+        <div class="grid-wrapper">
+            <div class="grid">
+                <div class="col">
+                    <header class="faded" data-delay-add="slide-in-up-group" data-delay="1">
+                        <h1>
+                            <i class="icon ion-cube"></i> SolidWorks</h1>
+                        <p>I create automation software, macros
+                            <br>and add-ins for SolidWorks</p>
+                    </header>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Full screen image -->
+    <section class="car">
+        <div class="faded slower" data-scroll-into-view="slide-fade-in" data-scroll-into-view-offset="60"></div>
+    </section>
+
+    <!-- SolidWorks Macros -->
+    <section class="solidworks-macros container single-vcenter">
+        <div class="grid-wrapper">
+            <div class="grid">
+                <div class="col">
+                    <header class="will-slide-in-up" data-scroll-into-view="slide-in-up-group">
+                        <h1>Macros and Standalone Tools</h1>
+                        <p>During my time using SolidWorks over the years I made a bunch of useful macros and tools. I bundled
+                            them all into a single file</p>
+                        <a class="button" href="$$Urls.Download.SolidWorksFiles$$">Download Macros and Tools</a>
+                    </header>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SolidDna -->
+    <section class="soliddna container single-vcenter">
+        <div class="grid-wrapper">
+            <div class="grid">
+                <div class="col">
+                    <header class="will-slide-in-up" data-scroll-into-view="slide-in-up-group">
+                        <h1>SolidDNA</h1>
+                        <p>To make creating SolidWorks add-ins and programs I made an
+                            <mark>open-source</mark> project called
+                            <strong>SolidDNA</strong> that allows fast and easy creation of add-ins using the
+                            <a href="$$Urls.External.SolidDna$$" target="_blank">SolidDNA API</a> instead of the SolidWorks API</p>
+                        <p>The SolidDNA API is much cleaner, modern and handles all of the messy COM objects for you so you
+                            can focus on writing your application</p>
+                        <a class="button" href="$$Urls.External.SolidDna$$" target="_blank">Get SolidDNA</a>
+                    </header>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BatchProcess -->
+    <section class="batchprocess-splash container single-vcenter">
+        <div class="grid-wrapper">
+            <div class="grid">
+                <div class="col">
+                    <header class="will-slide-in-up" data-scroll-into-view="slide-in-up-group">
+                        <h1>
+                            <i class="icon ion-ios-color-wand-outline"></i> BatchProcess</h1>
+                        <p>The automation tool for SolidWorks</p>
+                    </header>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Full screen image -->
+    <section class="batchprocess-screenshot">
+        <div class="faded slower" data-scroll-into-view="slide-fade-in" data-scroll-into-view-offset="60"></div>
+    </section>
+
+    <section class="batchprocess-explained container single-vcenter">
+        <div class="grid-wrapper">
+            <div class="grid">
+                <div class="col">
+                    <header class="will-slide-in-up" data-scroll-into-view="slide-in-up-group">
+                        <p>When you have
+                            <mark>repetitive</mark> design tasks or variations of products,
+                            <strong>BatchProcess</strong> is the tool for you.</p>
+                        <p>
+                            <mark class="alternative">Automate</mark> the tasks of exporting an entire assembly of parts and drawings, mass converting
+                            between file formats, printing, and running custom macros.</p>
+                    </header>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BatchProcess Features  -->
+    <section class="batchprocess-features container single-vcenter">
+        <div class="grid-wrapper">
+            <div class="grid">
+                <div class="col">
+                    <header class="will-slide-in-up" data-scroll-into-view="slide-in-up-group">
+                        <h1>Features</h1>
+                        <p>
+                            <mark class="alternative">Automatic printing</mark> of multiple files with setup and filtering</p>
+                        <p>
+                            <strong>Instant Custom Property Manager</strong> for instantly editing custom properties on single/multiple
+                            files</p>
+                        <p>
+                            Saving/Exporting files in over
+                            <mark>28 native formats</mark> including DXF, DWG, IGES, Step, Parasolid, and eDrawings®</p>
+                        <p>
+                            Updating
+                            <strong>Drawing Templates</strong> for single/multiple files</p>
+                        <p>
+                            <strong>Assembly tools</strong> for pack &amp; go, hiding/showing &amp; suppressing/resolving components,
+                            and more</p>
+                    </header>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BatchProcess Benefits  -->
+    <section class="batchprocess-benefits container single-vcenter">
+        <div class="grid-wrapper">
+            <div class="grid">
+                <div class="col">
+                    <header class="will-slide-in-up" data-scroll-into-view="slide-in-up-group">
+                        <h1>Benefits</h1>
+                        <p>Saves
+                            <strong>1000's of man hours</strong> per annum</p>
+                        <p>Removes the need for any
+                            <mark>repetitive tasks</mark>
+                        </p>
+                        <p>Reliability of a
+                            <strong>computer</strong> doing repetitive tasks reduces chance of errors</p>
+                        <p>Provides
+                            <mark class="alternative">enhanced features</mark> compared to the standard Custom Property Manager</p>
+                        <p>Product is
+                            <strong>always developing</strong> from customer feedback due to dedicated development team</p>
+                    </header>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="batchprocess-about container single-vcenter">
+        <div class="grid-wrapper">
+            <div class="grid">
+                <div class="col">
+                    <header class="will-slide-in-up" data-scroll-into-view="slide-in-up-group">
+                        <h1>What can BatchProcess do for me?</h1>
+                        <p>The best way to learn BatchProcess is to
+                            <a href="$$Urls.Download.BatchProcess$$" target="_blank">download</a> and install it, then open up
+                            <strong>SolidWorks</strong> and start experimenting.</p>
+                        <p>You can also check out the tutorial and
+                            <a href="$$Urls.Download.BatchProcessGuide$$" target="_blank">getting started guide</a>.</p>
+                    </header>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="batchprocess-i-want-it container single-vcenter">
+        <div class="grid-wrapper">
+            <div class="grid">
+                <div class="col">
+                    <header class="will-slide-in-up" data-scroll-into-view="slide-in-up-group">
+                        <h1>OK, I want it!</h1>
+                        <p>Great! You made the right decision.
+                            <strong>BatchProcess</strong> will quickly save you days and weeks of man-hours and be a
+                            <mark>super quick ROI.</mark>
+                        </p>
+                        <p>
+                            <a class="button" href="$$Urls.Download.BatchProcess$$" target="_blank">Download BatchProcess</a>
+                        </p>
+                    </header>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+
+<!--@ include footer @-->

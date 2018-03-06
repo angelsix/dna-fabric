@@ -37,10 +37,14 @@ OnLoad(function()
 
                 // Get item bounds
                 var itemBounds = item.getBoundingClientRect();
+                var offsetHeight = ViewportHeight() * (specificOffset / 100);
+                var triggerPosition = ViewportHeight() - offsetHeight;
 
                 // If the item has scrolled up past the percentage of the page in specified offset...
-                if (itemBounds.top + (itemBounds.height * (specificOffset / 100)) < ViewportHeight())
+                if (itemBounds.top < triggerPosition)
                 {
+                    console.log("triggered " + itemBounds.top + " < " + triggerPosition);
+
                     // Add the desired class
                     item.classList.add(item.getAttribute("data-scroll-into-view"));
                 }
@@ -57,7 +61,7 @@ OnLoad(function()
                     // Ignore 
                     return; 
  
-                // Don't process unless we want to unload on scroll up 
+                // Only process if they want the animation to unload
                 if (item.getAttribute("data-scroll-into-view-unload") == null) 
                    return; 
  
@@ -70,9 +74,12 @@ OnLoad(function()
                     specificOffset = 30;
 
                 // Get item bounds 
-                var itemBounds = item.getBoundingClientRect(); 
- 
-                if (itemBounds.top + (itemBounds.height * (specificOffset / 100)) > ViewportHeight()) 
+                var itemBounds = item.getBoundingClientRect();
+                var offsetHeight = ViewportHeight() * (specificOffset / 100);
+                var triggerPosition = ViewportHeight() - offsetHeight;
+
+                // If the item has scrolled down past the percentage of the page in specified offset...
+                if (itemBounds.top > triggerPosition) 
                 { 
                     // Remove the desired class 
                     item.classList.remove(item.getAttribute("data-scroll-into-view"));                         

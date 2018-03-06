@@ -1,6 +1,11 @@
 @import "Fabric/Settings/dna.fabric.settings";
 @import "Fabric/dna.fabric";
 @import "Modern1/modern1.home";
+@import "Modern1/modern1.about";
+@import "Modern1/modern1.contact";
+@import "Modern1/modern1.blog";
+@import "Modern1/modern1.youtube";
+@import "Modern1/modern1.solidworks";
 
 // Containers
 .container
@@ -60,6 +65,51 @@ a.button
     }
 }
 
+// Sections in general
+section
+{
+    // Dark background color
+    background: $color1;
+
+    // The text inside header
+    header
+    {
+        // Works same space apart as the height of the text
+        line-height: 1;
+
+        // Center the text
+        text-align: center;
+
+        // Each line of text as a header
+        > h1
+        {
+            // Unusually large font
+            font-size: $font-largest * 2;
+
+            // On smaller screens...
+            @include media('below-lap')
+            {
+                // Large font
+                font-size: $font-largest;
+            }
+        }
+
+        // Make all header paragraphs larger font
+        > p
+        {
+            // Larger font
+            font-size: $font-larger;
+
+            // On smaller screens...
+            @include media('below-lap')
+            {
+                // Large font
+                font-size: $font-large;
+            }
+        }
+    }    
+}
+
 section.footer
 {
     // Some padding around footer
@@ -74,4 +124,75 @@ section.footer
         // Remove section margin style
         margin: 0; 
     }
+}
+
+h1.alternative
+{
+    // Bright theme color
+    color: $color2; 
+
+    // Mark inside here is bright neutral color
+    mark { color: $color6; }    
+}
+
+// Headers directly after headers
+h1 + h1
+{
+    // No top margin
+    // And negative to "remove" heading aboves margin
+    margin-top: -$spacing-large;
+}
+
+p
+{
+    // Larger spacing
+    line-height: 1.5;
+}
+
+.inline-whole-image
+{
+    // Decent size
+    height: 50vh;
+
+    // Max size
+    max-height: 500px;
+
+    @include media($breakpoint-below-laptop)
+    {
+        height: 40vw;
+    }
+
+    // Shrink to fit
+    background-size: contain;
+
+    // Don't repeat image
+    background-repeat: no-repeat;
+
+    // Keep him to the center
+    background-position: center;
+
+    // Bit of top/bottom margin
+    margin: $spacing-larger 0; 
+}
+
+.spaced-lines
+{
+    h1, p
+    {
+        // Huge margin
+        margin: $font-largest * 2 0;
+
+        // On smaller screens...
+        @include media('below-lap')
+        {
+            // Large margin
+            margin: $font-largest 0;
+        }
+    }
+}
+
+ul > li
+{
+    font-size: $font-large;
+    margin: $spacing-small 0;
 }

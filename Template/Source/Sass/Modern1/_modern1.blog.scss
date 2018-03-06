@@ -1,0 +1,71 @@
+
+.blog
+{
+    // All sections on blog page should fill the page at least
+    // for a nice spaced out effect
+    > section, > header
+    {
+        // Fill the page at least
+        min-height: 100vh;
+    }
+
+    // Main header
+    h1 
+    {
+        // Alternative color
+        @extend h1.alternative;
+    }
+
+    .blog-splash
+    {        
+        h1
+        {            
+            // Small bottom margin
+            margin-bottom: $spacing-normal;
+        }
+
+        // Paragraph right after a header
+        h1 + p
+        {
+            // No margin
+            margin: 0;
+        }
+    }
+    
+    // Logo background
+    .logo-background
+    {
+        // Make image inline, centered and responsive
+        @extend .inline-whole-image;
+
+        // Mascot background image
+        background-image: url('/Assets/Images/logo.png');
+    }
+
+    .lookback-2017
+    {       
+        > div
+        {
+            // Full height
+            height: 100vh;
+
+            // Fill
+            background-size: cover;
+
+            // Don't repeat image
+            background-repeat: no-repeat;
+
+            // Keep image in center
+            background-position: center;
+
+            // Bit of top/bottom margin
+            margin: $spacing-larger 0; 
+            
+            // Image background
+            background-image: url('/Assets/Images/lookback2017.jpg');        
+        }
+    }
+
+    // Match spacing between headers and paragraphs
+    .free-knowledge { @extend .spaced-lines; }
+}
