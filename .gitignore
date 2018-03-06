@@ -10,6 +10,9 @@
 Template/WebRoot/
 Template/Source/Assets/Css/
 Template/Source/Assets/Files/
+Template/ServerRoot/Controllers/
+Template/ServerRoot/Views/
+Template/ServerRoot/wwwroot/
 
 project.lock.json
 
