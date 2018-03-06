@@ -1,0 +1,18 @@
+<!--@ output ..\ServerRoot\Controllers\HomeController.cs @-->
+<!--@ include ..\variables @-->
+using Microsoft.AspNetCore.Mvc;
+
+namespace Fabric.Server
+{
+    [Route("/[action]")]
+    public class HomeController : Controller
+    {
+        [Route("/")]
+        public IActionResult Index() => View();
+        public IActionResult About() => View();
+        public IActionResult Blog() => View();
+        public IActionResult Contact() => View();
+        public IActionResult SolidWorks() => View();
+        public IActionResult YouTube() => View();
+    }
+}
