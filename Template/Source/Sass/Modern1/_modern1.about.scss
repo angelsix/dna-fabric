@@ -39,22 +39,13 @@
         margin-top: $spacing-larger;
     }
 
-    .growing-up-image img, .camel-image img, .self-employed-image img , .sofa-image img 
+    .growing-up-image img, .camel-image img, .self-employed-image img , .sofa-image img, .the-itch-image img 
     {
         // Photo print style
         padding: 1.5vw 1.5vw 4vw 1.5vw;
 
         width: 70vw; 
         height: auto;
-    }
-
-    .the-itch-image img
-    {
-        // Photo print style
-        padding: 1vw 1vw 3vw 1vw;
-
-        width: auto; 
-        height: 80vh;
     }
 
     .on-ending

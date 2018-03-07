@@ -57,6 +57,13 @@ h1,h2,h3,h4,h5,h6
 {
     // Set heading font weights
     font-weight: $font-weight-heading;
+
+    // Break all headers if they get too large to fit on page
+    // when on small screens
+    @include media ($breakpoint-below-laptop)
+    {
+        word-break: break-all;
+    }
 }
 
 // Set heading sizes
