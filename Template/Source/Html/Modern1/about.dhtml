@@ -13,7 +13,7 @@
 
     <!-- Start -->
     <section class="start container single-vcenter">
-        <div class="grid-wrapper">
+        <div class="site-width">
             <div class="grid">
                 <div class="col">
                     <header class="will-slide-in-up" data-scroll-into-view="slide-in-up-group">
@@ -36,7 +36,7 @@
 
     <!-- Growing Up -->
     <section class="growing-up container single-vcenter">
-        <div class="grid-wrapper">
+        <div class="site-width">
             <div class="grid">
                 <div class="col">
                     <header class="will-slide-in-up" data-scroll-into-view="slide-in-up-group">
@@ -88,7 +88,7 @@
 
     <!-- Growing Up More -->
     <section class="growing-up container single-vcenter">
-        <div class="grid-wrapper">
+        <div class="site-width">
             <div class="grid">
                 <div class="col">
                     <header class="will-slide-in-up" data-scroll-into-view="slide-in-up-group">
@@ -128,7 +128,7 @@
 
     <!-- The Itch -->
     <section class="the-itch container single-vcenter">
-        <div class="grid-wrapper">
+        <div class="site-width">
             <div class="grid">
                 <div class="col">
                     <header class="will-slide-in-up" data-scroll-into-view="slide-in-up-group">
@@ -168,7 +168,7 @@
 
     <!-- Employment -->
     <section class="employment container single-vcenter">
-        <div class="grid-wrapper">
+        <div class="site-width">
             <div class="grid">
                 <div class="col">
                     <header class="will-slide-in-up" data-scroll-into-view="slide-in-up-group">
@@ -221,7 +221,7 @@
 
     <!-- Entrepreneurship -->
     <section class="entrepreneurship container single-vcenter">
-        <div class="grid-wrapper">
+        <div class="site-width">
             <div class="grid">
                 <div class="col">
                     <header class="will-slide-in-up" data-scroll-into-view="slide-in-up-group">
@@ -267,7 +267,7 @@
 
     <!-- Lessons -->
     <section class="lessons container single-vcenter">
-        <div class="grid-wrapper">
+        <div class="site-width">
             <div class="grid">
                 <div class="col">
                     <header class="will-slide-in-up" data-scroll-into-view="slide-in-up-group">
@@ -294,7 +294,7 @@
 
     <!-- My Skills -->
     <section class="my-skills container single-vcenter">
-        <div class="grid-wrapper">
+        <div class="site-width">
             <div class="grid">
                 <div class="col">
                     <header class="will-slide-in-up" data-scroll-into-view="slide-in-up-group">
@@ -362,7 +362,7 @@
 
     <!-- On ending -->
     <section class="on-ending container single-vcenter">
-        <div class="grid-wrapper">
+        <div class="site-width">
             <div class="grid">
                 <div class="col">
                     <header class="will-slide-in-up" data-scroll-into-view="slide-in-up-group">

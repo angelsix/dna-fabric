@@ -1,50 +1,88 @@
-$fabric-grid-col-padding:   $spacing-normal;
-$fabric-grid-name:          unquote("grid");
-$fabric-grid-col-name:      unquote("col");
-$fabric-grid-max-width:     1170px;
-
-@import "dna.fabric.grid.mixins";
-@import "dna.fabric.grid.styles";
-@import "dna.fabric.grid.demo";
-
-// Add all grid classes
-@include grid-column-widths();
-@include grid-push();
-@include grid-pull();
-@include grid-horizontal-aligns();
-@include grid-vertical-aligns();
-@include grid-tiles();
-@include grid-reverse();
-
-// All grid push/pull elements should have 
-// relative position so they can be positioned
-[class*="push-"]{ position:relative; }
-[class*="pull-"]{ position:relative; }
-
-//
-// Responsive grid classes
-//
-@each $breakpoint in $breakpoints 
+.grid
 {
-    // Examples
-    //   .below-lap-grid
-    //   .mob-full
-    //   .desk-tile-one-half
-    //
+    // Flex grid
+    display: flex;
 
-    // Get name of each breakpoint
-    $name: nth($breakpoint, 1);
-    
-    // Add media query wrapper around contents
-    @include media($name) 
+    // Wrap columns only if content cannot fit
+    flex-wrap: wrap;
+
+    // Alignment for all cells
+    &.align-top { align-items: flex-start; }
+    &.align-middle { align-items: center; }
+    &.align-bottom { align-items: flex-end; }
+
+    // Horizontal alignment
+    &.align-center { justify-content: center; }
+    &.align-right { justify-content: flex-end; }
+
+    // Gutters (and bottom margin so stacked grids space with gutters on bottom)
+    margin: -1em 0 1em -1em;
+
+    > .col
     {
-        // Add all grid classes
-        @include grid-column-widths('#{$name}-');
-        @include grid-push('#{$name}-');
-        @include grid-pull('#{$name}-');
-        @include grid-horizontal-aligns('#{$name}-');        
-        @include grid-vertical-aligns('#{$name}-');        
-        @include grid-tiles('#{$name}-');
-        @include grid-reverse('#{$name}-');
+        // Default to all columns split equal width
+        flex: 1;
+
+        // Gutters
+        padding: 1em 0 0 1em;
+
+        // Alignment per cell        
+        &.align-top { align-self: flex-start; }
+        &.align-middle { align-self: center; }
+        &.align-bottom { align-self: flex-end; }
+    }
+
+    // If we want to force columns to always stay on same line if content cannot fit
+    &.no-wrap > .col
+    {
+        overflow: hidden;
     }
 }
+
+// Some set width sizes for simplicity
+@mixin grid-widths($prefix: "")
+{
+    .grid > .col.#{$prefix}w100 { flex: 0 0 100%; }
+    .grid > .col.#{$prefix}w90 { flex: 0 0 90%; }
+    .grid > .col.#{$prefix}w80 { flex: 0 0 80%; }
+    .grid > .col.#{$prefix}w75 { flex: 0 0 75%; }
+    .grid > .col.#{$prefix}w70 { flex: 0 0 70%; }
+    .grid > .col.#{$prefix}w66 { flex: 0 0 66%; }
+    .grid > .col.#{$prefix}w60 { flex: 0 0 60%; }
+    .grid > .col.#{$prefix}w50 { flex: 0 0 50%; }
+    .grid > .col.#{$prefix}w40 { flex: 0 0 40%; }
+    .grid > .col.#{$prefix}w33 { flex: 0 0 33%; }
+    .grid > .col.#{$prefix}w30 { flex: 0 0 30%; }
+    .grid > .col.#{$prefix}w25 { flex: 0 0 25%; }
+    .grid > .col.#{$prefix}w20 { flex: 0 0 20%; }
+    .grid > .col.#{$prefix}w10 { flex: 0 0 10%; }
+}
+
+// Include non-responsive grid widths
+@include grid-widths();
+
+// For each breakpoint...
+@each $breakpoint in $breakpoints
+{
+    // Get name of each breakpoint
+    $name: nth($breakpoint, 1);
+
+    // Add media query wrapper for each breakpoint
+    @include media($name)
+    {
+        @include grid-widths('#{$name}-');
+    }
+}
+
+
+// Demo column styles
+.demo-col, .demo-col-medium, .demo-col-big
+{
+    border: 1px dashed $color2;
+    text-align: center;
+    padding: $spacing-normal;
+    display: block;
+}
+
+.demo-col-medium { padding: $spacing-large $spacing-normal; border-color: orange; }
+.demo-col-big { padding: $spacing-largest $spacing-normal; border-color: yellow; }

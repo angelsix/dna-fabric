@@ -8,7 +8,7 @@
 
     <!-- blog splash -->
     <section class="blog-splash container single-vcenter">
-        <div class="grid-wrapper">
+        <div class="site-width">
             <div class="grid">
                 <div class="col">
                     <header class="faded" data-delay-add="slide-in-up-group" data-delay="1">
@@ -29,7 +29,7 @@
 
     <!-- Blog details list -->
     <section class="blog-list container single-vcenter">
-        <div class="grid-wrapper">
+        <div class="site-width">
             <div class="grid">
                 <div class="col">
                     <header class="will-slide-in-up" data-scroll-into-view="slide-in-up-group">
@@ -50,7 +50,7 @@
 
     <!-- Free knowledge -->
     <section class="free-knowledge container single-vcenter">
-        <div class="grid-wrapper">
+        <div class="site-width">
             <div class="grid">
                 <div class="col">
                     <header class="will-slide-in-up" data-scroll-into-view="slide-in-up-group">

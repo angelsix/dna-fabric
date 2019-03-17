@@ -9,7 +9,7 @@
 
     <!-- youtube splash -->
     <section class="solidworks-splash container single-vcenter">
-        <div class="grid-wrapper">
+        <div class="site-width">
             <div class="grid">
                 <div class="col">
                     <header class="faded" data-delay-add="slide-in-up-group" data-delay="1">
@@ -30,7 +30,7 @@
 
     <!-- SolidWorks Macros -->
     <section class="solidworks-macros container single-vcenter">
-        <div class="grid-wrapper">
+        <div class="site-width">
             <div class="grid">
                 <div class="col">
                     <header class="will-slide-in-up" data-scroll-into-view="slide-in-up-group">
@@ -46,7 +46,7 @@
 
     <!-- SolidDna -->
     <section class="soliddna container single-vcenter">
-        <div class="grid-wrapper">
+        <div class="site-width">
             <div class="grid">
                 <div class="col">
                     <header class="will-slide-in-up" data-scroll-into-view="slide-in-up-group">
@@ -66,7 +66,7 @@
 
     <!-- BatchProcess -->
     <section class="batchprocess-splash container single-vcenter">
-        <div class="grid-wrapper">
+        <div class="site-width">
             <div class="grid">
                 <div class="col">
                     <header class="will-slide-in-up" data-scroll-into-view="slide-in-up-group">
@@ -86,7 +86,7 @@
     </section>
 
     <section class="batchprocess-explained container single-vcenter">
-        <div class="grid-wrapper">
+        <div class="site-width">
             <div class="grid">
                 <div class="col">
                     <header class="will-slide-in-up" data-scroll-into-view="slide-in-up-group">
@@ -104,7 +104,7 @@
 
     <!-- BatchProcess Features  -->
     <section class="batchprocess-features container single-vcenter">
-        <div class="grid-wrapper">
+        <div class="site-width">
             <div class="grid">
                 <div class="col">
                     <header class="will-slide-in-up" data-scroll-into-view="slide-in-up-group">
@@ -131,7 +131,7 @@
 
     <!-- BatchProcess Benefits  -->
     <section class="batchprocess-benefits container single-vcenter">
-        <div class="grid-wrapper">
+        <div class="site-width">
             <div class="grid">
                 <div class="col">
                     <header class="will-slide-in-up" data-scroll-into-view="slide-in-up-group">
@@ -154,7 +154,7 @@
     </section>
 
     <section class="batchprocess-about container single-vcenter">
-        <div class="grid-wrapper">
+        <div class="site-width">
             <div class="grid">
                 <div class="col">
                     <header class="will-slide-in-up" data-scroll-into-view="slide-in-up-group">
@@ -172,7 +172,7 @@
 
 
     <section class="batchprocess-i-want-it container single-vcenter">
-        <div class="grid-wrapper">
+        <div class="site-width">
             <div class="grid">
                 <div class="col">
                     <header class="will-slide-in-up" data-scroll-into-view="slide-in-up-group">

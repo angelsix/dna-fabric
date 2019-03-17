@@ -1,8 +1,8 @@
 <!-- Footer -->
 <section class="footer single-vcenter">
-    <div class="grid-wrapper">
-        <div class="grid horizontal-center">
-            <div class="col one-quarter below-lap-one-third">
+    <div class="site-width">
+        <div class="grid align-center">
+            <div class="col w20 below-lap-w30">
                 <header>
                     <img src="$$Images.LogoText$$" />
                     <p>&copy; AngelSix Ltd</p>

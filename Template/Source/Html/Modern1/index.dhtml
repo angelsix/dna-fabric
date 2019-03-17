@@ -9,9 +9,9 @@
     <!-- Mascot Banner -->
     <header class="mascot-header single-vcenter">
 
-        <div class="grid-wrapper">
-            <div class="grid vertical-center">
-                <div class="col one-half below-lap-one-whole">
+        <div class="site-width">
+            <div class="grid align-middle">
+                <div class="col below-lap-w100">
                     <div class="mascot-container">
                         <div class="mascot-particles">
                             <div data-particle-bubbles="0.2"></div>
@@ -19,7 +19,7 @@
                         <div class="mascot-background"></div>
                     </div>
                 </div>
-                <div class="col one-half below-lap-one-whole">
+                <div class="col below-lap-w100">
                     <header class="mascot-code">
                         <div class="faded" data-delay-add="slide-in-up-group" data-delay="1">
                             <p>
@@ -56,7 +56,7 @@
 
     <!-- My name is Luke -->
     <section class="my-name-is container single-vcenter">
-        <div class="grid-wrapper">
+        <div class="site-width">
             <div class="grid">
                 <div class="col">
                     <header class="will-slide-in-up" data-scroll-into-view="slide-in-up-group">
@@ -72,7 +72,7 @@
 
     <!-- Also known as -->
     <section class="also-known-as container single-vcenter">
-        <div class="grid-wrapper">
+        <div class="site-width">
             <div class="grid">
                 <div class="col">
                     <header class="will-slide-in-up" data-scroll-into-view="slide-in-up-group">
@@ -88,7 +88,7 @@
 
     <!-- I develop -->
     <section class="i-develop container single-vcenter">
-        <div class="grid-wrapper">
+        <div class="site-width">
             <div class="grid">
                 <div class="col">
                     <header class="will-slide-in-up" data-scroll-into-view="slide-in-up-group">
@@ -113,7 +113,7 @@
 
     <!-- Learn for free -->
     <section class="learn-for-free container single-vcenter">
-        <div class="grid-wrapper">
+        <div class="site-width">
             <div class="grid">
                 <div class="col">
                     <header class="will-slide-in-up" data-scroll-into-view="slide-in-up-group">
@@ -130,7 +130,7 @@
 
     <!-- Hire me -->
     <section class="hire-me container single-vcenter">
-        <div class="grid-wrapper">
+        <div class="site-width">
             <div class="grid">
                 <div class="col">
                     <header class="will-slide-in-up" data-scroll-into-view="slide-in-up-group">
@@ -145,7 +145,7 @@
 
     <!-- Are you still reading -->
     <section class="are-you-still-reading container single-vcenter">
-        <div class="grid-wrapper">
+        <div class="site-width">
             <div class="grid">
                 <div class="col">
                     <header class="will-slide-in-up" data-scroll-into-view="slide-in-up-group">

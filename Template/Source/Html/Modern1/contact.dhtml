@@ -9,7 +9,7 @@
 
     <!-- Contact me splash -->
     <section class="contact-me container single-vcenter">
-        <div class="grid-wrapper">
+        <div class="site-width">
             <div class="grid">
                 <div class="col">
                     <header class="faded" data-delay-add="slide-in-up-group" data-delay="1">
@@ -25,7 +25,7 @@
 
     <!-- My name is Luke -->
     <section class="container single-vcenter">
-        <div class="grid-wrapper">
+        <div class="site-width">
             <div class="grid">
                 <div class="col">
 

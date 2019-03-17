@@ -7,6 +7,13 @@
     box-sizing: border-box;
 }
 
+// For binding to the max width of the site
+.site-width
+{
+    max-width: $site-max-width;
+    margin: 0 auto;
+}
+
 //
 //   Container
 //
